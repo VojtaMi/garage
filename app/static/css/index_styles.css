@@ -1,0 +1,126 @@
+/*homepage title image*/
+#poster{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#poster img.poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center; /* Ensures the center of the image is always visible */
+}
+
+#title-logo-png{
+    width: 70%;
+}
+@media (max-width: 992px) {
+    #title-logo-png{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    #title-logo-png{
+        width: 90%;
+    }
+}
+
+
+/* text field within the poster image*/
+.poster-caption {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-green-transparent);
+    height: 30%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.poster-caption h1 {
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+    font-weight: bold;
+}
+.poster-caption h2 {
+    font-family: 'Nunito', sans-serif;
+    color: var(--black-green);
+    font-weight: bold;
+}
+
+/* split title  */
+.responsive-br {
+    display: none; /* Hide line break on larger screens */
+}
+
+.featurette-divider {
+  margin: 5rem; /* Space out the Bootstrap <hr> more */
+}
+
+
+/* larger marketing sections */
+.featurette-heading {
+    font-size: 50px;
+}
+
+.text-body-secondary-custom {
+    color: var(--lighter-purple); /* Sets the text color */
+}
+.lead{
+     padding-top: 1rem;
+     font-size: 1.7rem;
+}
+
+@media (max-width: 991px) {
+    .featurette-heading {
+    font-size: 40px;
+  }
+  .lead{
+     font-size: 1.25rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /*homepage title text splits for smaller screens*/
+    .responsive-br {
+        display: inline;
+    }
+    .img-fluid{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    .lead{
+     padding-top: 0;
+    }
+}
+
+@media (max-width: 630px){
+     /*home page title text field is wider for smaller screens*/
+    .poster-caption{
+        width: 100%;
+    }
+    .poster-caption h1 {
+    font-weight: bold;
+}
+ }
+@media (max-width: 576px) {
+  .featurette-heading {
+    font-size: 30px;
+  }
+  .featurette-divider {
+  margin: 2rem; /* Space out the Bootstrap <hr> more */
+  }
+}
+@media (max-width: 400px) {
+    .img-fluid{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}

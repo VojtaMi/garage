@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block extra_styles %}
+<!-- Custom CSS -->
+<link href="{{ url_for('static', filename='css/drink_menu_styles.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<img src="{{ url_for('static', filename='assets/img/wine.jpg') }}" class="d-block w-100 poster-img"
+     alt="{{ translations.drink_menu.altText }}">
+
+<!-- main menu -->
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <h1 class="heading mt-5 text-center">
+            {{ translations.drink_menu.title }}
+        </h1>
+    </div>
+</div>
+
+{% macro render_product(product) %}
+<tr>
+    <td>
+        {% if product.info %}
+        <button type="button" class="btn button-drink"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="{{ product.info }}">
+            {{ product.name }}
+            {% if product.measure %}
+            <span class="measure_text">({{ product.measure }})</span>
+            {% endif %}
+            <i class="bi bi-info-circle normal-icon" id="info_inline"></i>
+        </button>
+        {% else %}
+        <span class="btn button-style-blank">
+            {{ product.name }}
+            {% if product.measure %}
+            <span class="measure_text">({{ product.measure }})</span>
+            {% endif %}
+        </span>
+        {% endif %}
+    </td>
+    <td><span class="btn button-style-blank">{{ product.price }},-</span></td>
+</tr>
+{% endmacro %}
+
+{% for section in translations.drink_menu.sections %}
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        {% if section.name %}
+        <h2 class="heading mt-5 mb-3 text-center">{{ section.name }}</h2>
+        {% endif %}
+        <div class="col-md-12 col-xl-8">
+            {% for subsection in section.subsections %}
+            <div class="card mb-1">
+                <div class="card-header-dark">
+                    <button class="btn button-header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#{{ subsection.name | replace(' ', '_') | replace(',', '') }}"
+                            aria-expanded="false"
+                            aria-controls="{{ subsection.name | replace(' ', '_') | replace(',', '') }}"
+                            aria-label="Toggle {{ subsection.name }}">
+                        {{ subsection.name }}
+                        <i class="bi bi-caret-down toggle-icon normal-icon"></i>
+                    </button>
+                </div>
+                <div class="card-body pt-1 collapse"
+                     id="{{ subsection.name | replace(' ', '_') | replace(',', '') }}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            {% for product in subsection.products %}
+                            {{ render_product(product) }}
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <a href="{{ url_for('static', filename='assets/drink_menu.pdf') }}" target="_blank"
+           class="text-center btn btn-primary-purple" id="pdf-logo-large">
+            {{ translations.drink_menu.download }} <i class="bi bi-filetype-pdf"></i>
+        </a>
+    </div>
+</div>
+
+
+<div class="container" id="menu_disclaimer">
+    <div class="d-flex justify-content-center">
+        <ul class="mt-5 mb-0">
+            {% for disclaimer in translations.drink_menu.disclaimers %}
+            <li>{{ disclaimer | safe }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/script_drink_menu.js') }}"></script>
+{% endblock %}

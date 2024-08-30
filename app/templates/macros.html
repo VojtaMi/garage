@@ -1,0 +1,13 @@
+<!-- macros.html -->
+
+{% macro render_picture(base_path='', base_filename='', alt_text='', classes=[]) %}
+    <picture>
+        <!-- Source for AVIF format -->
+        <source srcset="{{ url_for('static', filename=('assets/' + base_path + '/' + base_filename + '.avif')) }}"
+                type="image/avif">
+        <!-- Fallback to JPG format -->
+        <img class="{{ ' '.join(classes) }}"
+             src="{{ url_for('static', filename=('assets/' + base_path + '/' + base_filename + '.jpg')) }}"
+             alt="{{ alt_text }}">
+    </picture>
+{% endmacro %}

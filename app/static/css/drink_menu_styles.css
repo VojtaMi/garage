@@ -1,0 +1,94 @@
+.card-header-dark{
+    position: relative;
+    height: 2.6rem;
+}
+.button-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button-header {
+    font-size: 1.2rem;
+    position: relative;
+    padding-right: 2rem; /* Add padding to the right to avoid text overlap */
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.button-header:hover {
+    background-color: var(--purple); /* Background color */
+    border-color: var(--whitey-purple); /* Border color on hover */
+    color: white; /* Text color on hover */
+}
+
+.button-header.clicked {
+    background-color: var(--purple); /* Background color on click */
+    border-color: var(--whitey-purple); /* Border color on click */
+    color: white; /* Text color on click */
+}
+
+.measure_text{
+    font-size: 0.7rem;
+    color: var(--white-purple);
+}
+
+.ingredients_text{
+    font-size: 0.9rem;
+    color: var(--white-purple);
+}
+
+
+.button-header i {
+    position: absolute;
+    right: 1rem; /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button-drink {
+    position: relative;
+    padding-right: 2rem; /* Add padding to the right to avoid text overlap */
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.button-style-blank {
+    position: relative;
+    padding-right: 2rem; /* Add padding to the right to avoid text overlap */
+    border: none;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Disable any click or hover interaction */
+    cursor: default; /* Change the cursor to default to indicate no interaction */
+}
+
+.button-drink i {
+    position: absolute;
+    right: 1rem; /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-panel {
+    padding: 10px;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--purple);
+    --bs-tooltip-color: white;
+}
+
+#pdf-logo-large {
+    font-size: clamp(1.1rem, 2vw + 1rem, 1.6rem);
+}
+
+#info_inline{
+    font-size: 1rem;
+}
+footer{
+    margin-top: 2rem;
+}

@@ -1,0 +1,97 @@
+.large-information-content {
+  object-fit: cover;
+  height: 100%; /* Ensure the iframe takes full height */
+  width: 100%; /* Ensure the iframe takes full width */
+}
+
+/* Optional: Ensure the text content does not overflow */
+.location_details {
+  margin-top: auto; /* Aligns the content to take up remaining space */
+  margin-bottom: auto; /* Keeps content centered */
+}
+
+.location_details {
+  font-size: 1.4rem;
+  margin-bottom: 3rem; /* Adjust the value as needed */
+}
+.location_detail {
+  margin-bottom: 3rem; /* Adjust the value as needed */
+}
+
+#map-button-container {
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--cream-purple); /* Applying the border and color */
+  padding: 10px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.map-button-text{
+    font-size: 1.1rem;
+}
+.cookie-text{
+    font-size: 1rem;
+}
+
+.information-heading {
+  margin-bottom: 4rem; /* Adjust the value as needed */
+  color: var(--cream-purple);
+}
+
+#disclaimer table {
+  width: 40%; /* Adjust the percentage as needed */
+  margin: 0 auto; /* Center the table */
+}
+
+.bi-box-arrow-up-right{
+    margin-left: 0.3rem;
+}
+
+#opening_hours_table {
+    min-height: 70%;
+}
+#opening_hours_table td {
+    text-align: center;        /* Horizontal centering */
+    vertical-align: middle;    /* Vertical centering */
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+}
+.information-heading{
+    margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    #opening_hours_table td {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 991px) {
+  .location_details {
+    margin-bottom: 0; /* Adjust the value as needed */
+  }
+  #disclaimer table {
+    width: 80%; /* Adjust the percentage as needed */
+  }
+}
+
+@media (max-width: 767px) {
+  /*homepage title text splits for smaller screens*/
+  .location_detail {
+    margin-bottom: 0; /* Adjust the value as needed */
+  }
+  .information-heading {
+    margin-bottom: 1rem; /* Adjust the value as needed */
+    margin-top: 1rem; /* Adjust the value as needed */
+  }
+}

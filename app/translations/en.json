@@ -1,0 +1,989 @@
+{
+  "home": {
+    "title": "Home",
+    "poster": {
+      "altText": "Bar",
+      "title": "Club Garage Prague"
+    },
+    "features": [
+      {
+        "altText": "Tray with drinks",
+        "title": "Amazing drinks",
+        "description": [
+          "Wide selection of beverages.",
+          "Try out our chilled cocktails."
+        ],
+        "buttonText": "Drinks »",
+        "buttonLink": "drink_menu",
+        "image": "drinks.jpg"
+      },
+      {
+        "altText": "Microphone",
+        "title": "Entertainment",
+        "description": [
+          "Dance to the popular songs.",
+          "Wed-Sat, from 10 PM."
+        ],
+        "buttonText": "Info »",
+        "buttonLink": "information",
+        "image": "karaoke.jpg"
+      },
+      {
+        "altText": "Man with devil mask",
+        "title": "Themed Parties",
+        "description": [
+          "No shortage of events.",
+          "Come and experience great fun."
+        ],
+        "buttonText": "Gallery »",
+        "buttonLink": "gallery",
+        "image": "party.jpg"
+      }
+    ],
+    "featurettes": [
+      {
+        "heading": [
+          "We can shake it up.",
+          "Come see for yourself."
+        ],
+        "description": [
+          "Our bartenders are professionals.",
+          "They can mix you a top-notch taste experience."
+        ],
+        "image": {
+          "altText": "bartender",
+          "src": "assets/img/barman.jpg",
+          "src_wide": "assets/img/barman_wide.jpg"
+        }
+      },
+      {
+        "heading": [
+          "An interior that entertains.",
+          "We are waiting for you."
+        ],
+        "description": [
+          "A place to sit with friends or have a big party?",
+          "We are ready."
+        ],
+        "image": {
+          "altText": "Interior",
+          "src": "assets/img/car.jpg",
+          "src_wide": "assets/img/car_wide.jpg"
+        }
+      },
+      {
+        "heading": [
+          "We go even after midnight.",
+          "Show us how you can get the party started."
+        ],
+        "description": [
+          "You can party with us from Wednesday to Saturday.",
+          "We are open from 10 PM until the morning."
+        ],
+        "image": {
+          "altText": "Party",
+          "src": "assets/img/night_life.jpg",
+          "src_wide": "assets/img/night_life_wide.jpg"
+        }
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "quote": [
+      "We are an open bar where everyone can have fun, regardless of their background or orientation.",
+      "A friendly atmosphere and great music."
+    ],
+    "fb_button_text": "Follow us fow the news",
+    "other_bars_title": [
+      "Do you like TerMix?",
+      "Visit also our other clubs in Prague."
+    ]
+  },
+  "events": {
+    "title": "Events",
+    "event_list": [
+      {
+        "title": "21st birthday of TerMix",
+        "date": "August 24, 2024",
+        "description": "A party celebrating the anniversary of our club's founding.",
+        "img_filename": "birthday-21_24",
+        "aria-label": "21. anniversary of TerMix, August 24 2024"
+      },
+      {
+        "title": "Karaoke",
+        "date": "Every wednesday",
+        "description": "Join us to sing along to popular hits, or just come to dance.",
+        "img_filename": "karaoke_party_24",
+        "aria-label": "Karaoke party, every wednesday. DJ Marty Blue"
+      },
+      {
+        "title": "Flirt party",
+        "date": "August 10, 2024",
+        "description": "The perfect opportunity to meet someone new. Find a partner for a date, a flirt, or just come to have fun.",
+        "img_filename": "pride-flirt_24",
+        "aria_label": "Pride flirt party, August 10 2024. Entry fee 300 Kč. DJ JFK."
+      }
+    ],
+    "aria-label-card": "Click to see details",
+    "fb_button_text": [
+      "Follow us",
+      "so you don't miss anything."
+    ]
+  },
+  "opening_hours": [
+    {
+      "day": "Wednesday",
+      "hours": "10:00 PM - 5:00 AM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10:00 PM - 5:00 AM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10:00 PM - 6:00 AM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10:00 PM - 6:00 AM"
+    }
+  ],
+  "information": {
+    "title": "Information",
+    "connections": "Connection",
+    "location": {
+      "address": "Třebízského 4a, Prague 2",
+      "tram_stop": {
+        "name": "Vinohradská tržnice (tram)",
+        "distance": "100m"
+      },
+      "metro": {
+        "name": "Jiřího z Poděbrad",
+        "distance": "500m"
+      },
+      "map_frame_button_text": "View map here",
+      "cookie_disclaimer": "uses cookies",
+      "map_button_text": "Open with mapy.cz"
+    },
+    "entrance_image": {
+      "alt": "Main entrance"
+    },
+    "opening_hours": {
+      "heading": "Opening Hours"
+    },
+    "ageRestriction": "Entry 18+",
+    "payments": [
+      "Cash only",
+      "ATM"
+    ],
+    "cloakroom": "Cloakroom",
+    "additional_info": {
+      "heading": "Additional info"
+    },
+    "operator": "Operator"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "alt_text": "TerMix club gallery picture",
+    "more_pictures": "More pictures",
+    "fb_albums": "Albums",
+    "ig_follow": "Follow us"
+  },
+  "drink_menu": {
+    "title": "Drink Menu",
+    "altText": "An assortment of wine bottles on a wooden table",
+    "download": "Download",
+    "disclaimers": [
+      "List of allergens with the bar staff.",
+      "All drinks are served with ice.",
+      "Valid as of May 1, 2022.",
+      "Prices and availability are subject to change. <br> Please check with our staff for the most current information."
+    ],
+    "sections": [
+      {
+        "name": "",
+        "subsections": [
+          {
+            "name": "Aperitifs",
+            "products": [
+              {
+                "name": "Campari",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": ""
+              },
+              {
+                "name": "Martini",
+                "measure": "0.1 l",
+                "price": "80",
+                "info": "Dry/Bianco/Fiero"
+              },
+              {
+                "name": "Aperol",
+                "measure": "0.04 l",
+                "price": "60",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Bourbon",
+            "products": [
+              {
+                "name": "Jim Beam White",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Four Roses",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Jack Daniel's",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": "Original/Fire/Honey"
+              }
+            ]
+          },
+          {
+            "name": "Whisky",
+            "products": [
+              {
+                "name": "Johny Walker Red Label",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Ballantine's",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Tullamore Dew",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Jameson",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Chivas Regal 12 YO",
+                "measure": "0.04 l",
+                "price": "140",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Gin",
+            "products": [
+              {
+                "name": "SAVOY Dry Gin",
+                "measure": "0.04 l",
+                "price": "75",
+                "info": ""
+              },
+              {
+                "name": "RIVES Pink",
+                "measure": "0.04 l",
+                "price": "75",
+                "info": ""
+              },
+              {
+                "name": "Bombay Sapphire",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Botega Bacur Gin",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              },
+              {
+                "name": "Star of Bombay 47,5%",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Vodka",
+            "products": [
+              {
+                "name": "MARY JANE",
+                "measure": "0.04 l",
+                "price": "75",
+                "info": ""
+              },
+              {
+                "name": "FLIRT vodka",
+                "measure": "0.04 l",
+                "price": "75",
+                "info": "As available"
+              },
+              {
+                "name": "Grey goose premium",
+                "measure": "0.04 l",
+                "price": "120",
+                "info": ""
+              },
+              {
+                "name": "TOM of Finland",
+                "measure": "0.04 l",
+                "price": "120",
+                "info": "organic"
+              }
+            ]
+          },
+          {
+            "name": "Rum",
+            "products": [
+              {
+                "name": "Arehucas",
+                "measure": "0.04 l",
+                "price": "75",
+                "info": "Blanco/Oro"
+              },
+              {
+                "name": "Bacardi Spiced",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Ypióca Prata",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Malibu",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "El Comandante Overproof 80%",
+                "measure": "0.04 l",
+                "price": "95",
+                "info": ""
+              },
+              {
+                "name": "Legendario Elixir de Cuba",
+                "measure": "0.04 l",
+                "price": "95",
+                "info": ""
+              },
+              {
+                "name": "Zacapa Centenario 23YO",
+                "measure": "0.04 l",
+                "price": "160",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Tequila",
+            "products": [
+              {
+                "name": "Sierra silver",
+                "measure": "0.04 l",
+                "price": "95",
+                "info": ""
+              },
+              {
+                "name": "Sierra reposado",
+                "measure": "0.04 l",
+                "price": "95",
+                "info": ""
+              },
+              {
+                "name": "Sierra Antiquo Plata",
+                "measure": "0.04 l",
+                "price": "110",
+                "info": ""
+              },
+              {
+                "name": "Sierra Antiquo aňejo",
+                "measure": "0.04 l",
+                "price": "110",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Liquors",
+            "products": [
+              {
+                "name": "Jägermeister",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Baileys",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Kahlua",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Sambuca Antica",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Cointreau",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Ferner Stock",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": "Stock/Citrus"
+              },
+              {
+                "name": "Karlovarská Becherovka",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": "Original/Lemond"
+              },
+              {
+                "name": "Bartida Zelená",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": ""
+              },
+              {
+                "name": "Koskenkorva Peach",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": ""
+              },
+              {
+                "name": "Trojka Pink",
+                "measure": "0.04 l",
+                "price": "60",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Other spirits",
+            "products": [
+              {
+                "name": "Plum brandy R.Jelínek 3YO",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Pear brandy Wiliams R. J.",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Absinth",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Tuzemák Bartida",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": "Potato rum"
+              },
+              {
+                "name": "TATRATEA 22%, 32%, 42%",
+                "measure": "0.04 l",
+                "price": "75",
+                "info": ""
+              },
+              {
+                "name": "TATRATEA 52%, 62%, 72%",
+                "measure": "0.04 l",
+                "price": "85",
+                "info": ""
+              },
+              {
+                "name": "Metaxa 5*",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": ""
+              },
+              {
+                "name": "Smirnoff Ice",
+                "measure": "0.275 l",
+                "price": "105",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Soft drinks",
+            "products": [
+              {
+                "name": "PEPSI-COLA",
+                "measure": "0.1 l",
+                "price": "22",
+                "info": "postmix"
+              },
+              {
+                "name": "Tonic, 7UP, soda",
+                "measure": "0.1 l",
+                "price": "22",
+                "info": "postmix"
+              },
+              {
+                "name": "Mirinda",
+                "measure": "0.33 l",
+                "price": "75",
+                "info": ""
+              },
+              {
+                "name": "PEPSI Sugar free",
+                "measure": "0.33 l",
+                "price": "75",
+                "info": ""
+              },
+              {
+                "name": "Ice tea",
+                "measure": "0.33 l",
+                "price": "75",
+                "info": "As available"
+              },
+              {
+                "name": "Juice",
+                "measure": "0.1 l",
+                "price": "22",
+                "info": "As available"
+              },
+              {
+                "name": "Juice TOMA",
+                "measure": "0.25 l",
+                "price": "55",
+                "info": "glass (As available)"
+              },
+              {
+                "name": "AQUILA – still water",
+                "measure": "0.33 l",
+                "price": "45",
+                "info": ""
+              },
+              {
+                "name": "MATTONI  – slightly sparkling mineral water",
+                "measure": "0.33 l",
+                "price": "45",
+                "info": ""
+              },
+              {
+                "name": "Evian",
+                "measure": "0.33 l",
+                "price": "60",
+                "info": ""
+              },
+              {
+                "name": "Nespresso, milk",
+                "measure": "bal",
+                "price": "45",
+                "info": ""
+              },
+              {
+                "name": "RED BULL Energy drink",
+                "measure": "0.25 l",
+                "price": "80",
+                "info": "Original/Sugarfree/Tropical edition"
+              }
+            ]
+          },
+          {
+            "name": "Additional sales",
+            "products": [
+              {
+                "name": "Crisps  – As available",
+                "measure": "bal.",
+                "price": "45",
+                "info": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wine",
+        "subsections": [
+          {
+            "name": "Champagne",
+            "products": [
+              {
+                "name": "Moët & Chandon Brut Impérial",
+                "measure": "0.375 l",
+                "price": "995",
+                "info": ""
+              },
+              {
+                "name": "Moët & Chandon Brut Impérial",
+                "measure": "0.75 l",
+                "price": "1990",
+                "info": ""
+              },
+              {
+                "name": "Moët & Chandon Ice Impérial",
+                "measure": "0.75 l",
+                "price": "2190",
+                "info": ""
+              },
+              {
+                "name": "Moët & Chandon Rosé",
+                "measure": "0.75 l",
+                "price": "2190",
+                "info": ""
+              },
+              {
+                "name": "Moët & Chandon N.I.R",
+                "measure": "0.75 l",
+                "price": "2490",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Sparkling wine",
+            "products": [
+              {
+                "name": "Martini Prosecco",
+                "measure": "0.15 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Martini Prosecco",
+                "measure": "0.75 l",
+                "price": "450",
+                "info": ""
+              },
+              {
+                "name": "Bohemia Sekt",
+                "measure": "0.75 l",
+                "price": "360",
+                "info": "demi sec, brut"
+              },
+              {
+                "name": "Bohemia Sekt",
+                "measure": "0.375 l",
+                "price": "190",
+                "info": "demi sec, brut"
+              }
+            ]
+          },
+          {
+            "name": "House wine",
+            "products": [
+              {
+                "name": "As available",
+                "measure": "0.2 l",
+                "price": "60",
+                "info": ""
+              },
+              {
+                "name": "Spritzer 2:1",
+                "measure": "0.3 l",
+                "price": "80",
+                "info": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beer",
+        "subsections": [
+          {
+            "name": "Draft",
+            "products": [
+              {
+                "name": "Staropramen 10°",
+                "measure": "0.5 l",
+                "price": "70",
+                "info": ""
+              },
+              {
+                "name": "Carling Cider",
+                "measure": "0.3 l",
+                "price": "55",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Bottle",
+            "products": [
+              {
+                "name": "Stella Artois ležák 12°",
+                "measure": "0.33 l",
+                "price": "65",
+                "info": ""
+              },
+              {
+                "name": "Stella Artois nealko",
+                "measure": "0.33 l",
+                "price": "55",
+                "info": ""
+              },
+              {
+                "name": "Corona",
+                "measure": "0.33 l",
+                "price": "105",
+                "info": ""
+              },
+              {
+                "name": "Desperado",
+                "measure": "0.33 l",
+                "price": "105",
+                "info": ""
+              },
+              {
+                "name": "Frisco",
+                "measure": "0.33 l",
+                "price": "60",
+                "info": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cocktails",
+        "subsections": [
+          {
+            "name": "Special cocktails",
+            "products": [
+              {
+                "name": "MARTINI FIERO & TONIC",
+                "measure": "",
+                "price": "113",
+                "info": ""
+              },
+              {
+                "name": "AMARANCIO",
+                "measure": "",
+                "price": "150",
+                "info": "Savoy gin, Campari, Red Bull Tropical Edition"
+              }
+            ]
+          },
+          {
+            "name": "Cocktails",
+            "products": [
+              {
+                "name": "SPRITZ",
+                "measure": "",
+                "price": "143",
+                "info": "Art spritz aperitivo, prosecco, soda, orange"
+              },
+              {
+                "name": "PINK PARADISE",
+                "measure": "",
+                "price": "93",
+                "info": "Trojka PINK, soda, lime"
+              },
+              {
+                "name": "B 52",
+                "measure": "",
+                "price": "108",
+                "info": "Bailey´s, Kahlúa, El Commandante rum"
+              },
+              {
+                "name": "Bavorák",
+                "measure": "",
+                "price": "103",
+                "info": "Fernet Stock, tonic"
+              },
+              {
+                "name": "Beton",
+                "measure": "",
+                "price": "103",
+                "info": "Becherovka, tonic"
+              },
+              {
+                "name": "Black Russian",
+                "measure": "",
+                "price": "118",
+                "info": "Vodka, Kahlúa"
+              },
+              {
+                "name": "Bloody Mary",
+                "measure": "",
+                "price": "130",
+                "info": "Vodka, tomato juice, tabasco"
+              },
+              {
+                "name": "Caipirinha",
+                "measure": "",
+                "price": "95",
+                "info": "Ypióca Prata, lime, sugar"
+              },
+              {
+                "name": "Campari Orange",
+                "measure": "",
+                "price": "98",
+                "info": ""
+              },
+              {
+                "name": "Cosmopolitan",
+                "measure": "",
+                "price": "145",
+                "info": "Vodka, Cointreau, cranberry juice, lime juice"
+              },
+              {
+                "name": "Cuba libre",
+                "measure": "",
+                "price": "108",
+                "info": "Arehucas Rum, pepsi-cola, lime juice"
+              },
+              {
+                "name": "Gin Tonic",
+                "measure": "",
+                "price": "108",
+                "info": ""
+              },
+              {
+                "name": "Strawberry Gin Tonic",
+                "measure": "",
+                "price": "108",
+                "info": "Rives Pink gin, Tonic"
+              },
+              {
+                "name": "Long Beach Ice Tea",
+                "measure": "",
+                "price": "205",
+                "info": "Gin, Vodka, Rum, Tequila, Triple sec, lemon juice, sugar, cranberry juice"
+              },
+              {
+                "name": "Long Island Ice Tea",
+                "measure": "",
+                "price": "205",
+                "info": "Gin, Vodka, Rum, Tequila, Triple sec, lemon juice, sugar, cola"
+              },
+              {
+                "name": "Tokyo Ice Tea",
+                "measure": "",
+                "price": "205",
+                "info": "Gin, Vodka, Rum, Tequila, Melon liqueur, lemon juice, sugar, sprite"
+              },
+              {
+                "name": "Margarita",
+                "measure": "",
+                "price": "135",
+                "info": "Tequila, Cointreau, lemon juice"
+              },
+              {
+                "name": "Mojito",
+                "measure": "",
+                "price": "170",
+                "info": "Arehucas rum, lime, mint, cane sugar, soda"
+              },
+              {
+                "name": "Red Bull + Mary Jane vodka",
+                "measure": "",
+                "price": "155",
+                "info": ""
+              },
+              {
+                "name": "Screwdriver",
+                "measure": "",
+                "price": "108",
+                "info": "Mary Jane vodka, orange juice"
+              },
+              {
+                "name": "Sex on the Beach",
+                "measure": "",
+                "price": "143",
+                "info": "Vodka, Peach Tree, orange juice, grenadine"
+              },
+              {
+                "name": "Tequila Sunrise",
+                "measure": "",
+                "price": "135",
+                "info": "Tequila, orange juice, grenadine"
+              },
+              {
+                "name": "Chupito",
+                "measure": "",
+                "price": "60",
+                "info": "Vodka, lime juice, cocktail cherry"
+              }
+            ]
+          },
+          {
+            "name": "Maxi Cocktail",
+            "products": [
+              {
+                "name": "Cuba libre",
+                "measure": "",
+                "price": "1080",
+                "info": "0,4 l A. Blanco, 1,5 l Pepsi, Lime"
+              },
+              {
+                "name": "Mojito",
+                "measure": "",
+                "price": "1455",
+                "info": "0,6 l A. Blanco, 1,5 l Soda, Lime, Mint, Sugar"
+              }
+            ]
+          },
+          {
+            "name": "Bottle Servis",
+            "products": [
+              {
+                "name": "Mary Jane vodka 0,5 l + 6x Red Bull",
+                "measure": "",
+                "price": "1418",
+                "info": ""
+              },
+              {
+                "name": "Mary Jane vodka 0,7 l + 6x Red Bull",
+                "measure": "",
+                "price": "1793",
+                "info": ""
+              },
+              {
+                "name": "Grey Goose 1 l + 6x Red Bull",
+                "measure": "",
+                "price": "3480",
+                "info": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "aria_label": "Show navigation"
+  }
+}

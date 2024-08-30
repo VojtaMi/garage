@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block extra_styles %}
+<!-- Custom CSS -->
+<link href="{{ url_for('static', filename='css/index_styles.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<!-- Poster Image -->
+<div id="poster" class="mb-5">
+    {% set poster = translations.home.poster %}
+    <h1 class="visually-hidden">{{ poster.title }}</h1> <!-- Hidden h1 for SEO and accessibility -->
+    <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="d-block w-100 poster-img"
+         alt="{{ poster.altText }}">
+    <div class="poster-caption">
+        <img id="title-logo-png" src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}">
+    </div>
+</div>
+
+<div class="container marketing pt-3">
+    <!-- Feature List -->
+    <div id="feature_list" class="row justify-content-center">
+        {% for feature in translations.home.features %}
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img src="{{ url_for('static', filename='assets/img/' ~ feature.image) }}" alt="{{ feature.altText }}"
+                 class="rounded-circle img-hover">
+
+            <h2>{{ feature.title }}</h2>
+            <p>{{ feature.description[0] }}<br>{{ feature.description[1] }}</p>
+            <p><a class="btn btn-primary-purple" href="{{ url_for(feature.buttonLink, lang=lang) }}">{{
+                feature.buttonText
+                }}</a></p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Featurette Section -->
+    <hr class="featurette-divider">
+    {% for featurette in translations.home.featurettes %}
+    <div class="row featurette">
+        <div class="col-md-7 {% if loop.index is divisibleby 2 %}order-md-2{% endif %}">
+            <h2 class="featurette-heading fw-normal lh-1">
+                {{ featurette.heading[0] }}
+                <span class="text-body-secondary-custom">{{ featurette.heading[1] }}</span>
+            </h2>
+            <p class="lead">
+                {{ featurette.description[0] }}<br>{{ featurette.description[1] }}
+            </p>
+        </div>
+        <div class="col-md-5 {% if loop.index is divisibleby 2 %}order-md-1{% endif %}">
+            <picture>
+                <source media="(min-width: 430px) and (max-width: 767.5px)"
+                        srcset="{{ url_for('static', filename=featurette.image.src_wide) }}">
+                <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
+                     class="img-fluid mx-auto">
+            </picture>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    {% endfor %}
+
+    <!-- Information Section -->
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-12 col-lg-8 col-xl-6">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body pt-1">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <i class="bi bi-clock mb-1 normal-icon"></i>
+                            {% include "opening_hours.html" %}
+
+                            <i class="bi bi-pin-map mb-1 normal-icon"></i>
+                            <table class="table table-bordered mb-2">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">{{ translations.information.location.address }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <i class="bi bi-person-check-fill mb-1 normal-icon"></i>
+                            <table class="table table-bordered mb-2">
+                                <tbody>
+                                <tr>
+                                    <td class="address text-center">{{ translations.information.ageRestriction }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/script_home.js') }}"></script>
+{% endblock %}

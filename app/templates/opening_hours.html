@@ -1,0 +1,10 @@
+<table class="table table-bordered mb-2" id="opening_hours_table">
+    <tbody>
+    {% for record in translations.opening_hours %}
+    <tr>
+        <td>{{ record.day }}</td>
+        <td>{{ record.hours }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

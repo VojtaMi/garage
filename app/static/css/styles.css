@@ -1,0 +1,126 @@
+/*css variables*/
+:root {
+    --black-green: #212606;
+    --dark-purple: #6038a7;
+    --purple: #6f42c1;
+    --lighter-purple: #8354d5;
+    --cream-purple: #a490de;
+    --whitey-purple: #b9a8e0;
+    --white-purple: #d0c7f0;
+    --light-green-transparent:#d3d6cb80;
+    --dark-gray-purple: #696182;
+    --light-gray: #AEB2B6;
+}
+
+/*base styles*/
+.lang-link {
+    font-size: 1.25rem; /* Increase the font size */
+}
+
+.link-logo{
+    width:8rem;
+    margin-right: 2rem;
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+@media (max-width: 991px) {
+    #header_logo{
+        width: 2rem;
+    }
+}
+/*base styles end*/
+
+/*shared styles*/
+h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+}
+/*heading - purple h1*/
+.heading{
+    margin-bottom: 4rem;
+    color: var(--cream-purple);
+}
+
+@media (max-width: 991px) {
+    .heading{
+        margin-bottom: 1rem;
+    }
+}
+
+.card-header{
+    background-color: var(--purple); /* purple */
+    height: 2.2rem;
+}
+
+.normal-icon{
+    font-size: 1.4rem;
+}
+
+.icon{
+    height: 1.4rem;
+}
+.btn-outline-purple {
+    color: var(--cream-purple); /* Text color */
+    border: 1px solid var(--cream-purple); /* Border color */
+    background-color: transparent; /* No background */
+}
+
+.btn-outline-purple:hover {
+    background-color: var(--purple); /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.btn-primary-purple {
+    background-color: var(--purple); /* purple */
+    border-color: var(--purple);
+    color: white; /* Text color on hover */
+}
+
+.btn-primary-purple:hover {
+    background-color: var(--dark-gray-purple); /* Background color */
+    border-color: var(--dark-gray-purple); /* Border color on hover */
+    color: white; /* Text color on hover */
+}
+/* aniated rounded images */
+/* fast links bellow title image for title page, logos at about page */
+.rounded-circle {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+    margin-bottom: 10px;
+}
+
+.img-hover {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Scale the image to 120% of its original size */
+}
+
+.circle-frame {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: white; /* Optional: for a white background inside the circle */
+}
+
+.white-bg{
+     background-color: white;
+}
+.img-fit{
+    max-width: 100%;
+}
+
+
+#disclaimer{
+    color: var(--light-gray);
+}
+
+/*shared styles end*/

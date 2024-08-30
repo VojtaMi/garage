@@ -1,0 +1,85 @@
+.flip-card {
+    background-color: transparent;
+    width: 100%; /* Set to the desired width */
+    padding-top: 141.44%; /* Aspect ratio 1.4144:1 */
+    position: relative;
+    margin: 0 auto; /* Center the card */
+    perspective: 1000px; /* Keep 3D perspective */
+    cursor: pointer; /* Shows the pointer cursor when hovering */
+}
+
+.flip-card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: var(--dark-purple);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
+.flip-card-back p {
+    font-size: 1.2rem;
+}
+
+.card-picture{
+    width: 100%;
+    height: 100%
+}
+
+.btn-primary-purple{
+    font-size: 1.2rem;
+}
+
+.btn-primary-purple .bi-facebook{
+    font-size: 1.7rem;
+}
+
+#swap-card-sign {
+    position: absolute;  /* Position it absolutely relative to the .flip-card-front */
+    top: 5%;           /* Adjust this value to move it vertically */
+    right: 5%;         /* Adjust this value to move it horizontally */
+    font-size: 2em;    /* Adjust icon size if needed */
+    background-color: var(--light-green-transparent);
+    padding-left: .5rem;  /* Sets padding on the left */
+    padding-right: .5rem; /* Sets padding on the right */
+    border-radius: 50%;           /* Makes the background circular */
+}
+
+@media (min-width: 1200px) {
+    /* Default image styles */
+    .gallery-picture {
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    /* Hover effect with shadow */
+    .gallery-picture:hover {
+        box-shadow: 0 0 10px var(--lighter-purple);
+        transform: scale(1.05); /* Slightly zoom in */
+    }
+}
+
