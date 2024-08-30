@@ -84,8 +84,8 @@
       "hours": "10:00 PM - 6:00 AM"
     }
   ],
-  "information": {
-    "title": "Information",
+  "contacts": {
+    "title": "contacts",
     "connections": "Connection",
     "location": {
       "address": "Třebízského 4a, Prague 2",

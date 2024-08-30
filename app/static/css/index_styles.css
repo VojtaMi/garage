@@ -42,16 +42,6 @@
     text-align: center;
 }
 
-.poster-caption h1 {
-    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
-    font-weight: bold;
-}
-.poster-caption h2 {
-    font-family: 'Nunito', sans-serif;
-    color: var(--black-green);
-    font-weight: bold;
-}
-
 /* split title  */
 .responsive-br {
     display: none; /* Hide line break on larger screens */
@@ -77,6 +67,11 @@
      font-family: "Raleway", sans-serif;
      margin-bottom: 2rem;
      margin-top: 2rem;
+}
+
+.btn-home-capital{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
 }
 
 @media (max-width: 991px) {
@@ -106,7 +101,7 @@
 @media (max-width: 630px){
      /*home page title text field is wider for smaller screens*/
     .poster-caption{
-        width: 100%;
+        width: 98%;
     }
     .poster-caption h1 {
     font-weight: bold;

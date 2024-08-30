@@ -2,21 +2,21 @@
 
 {% block extra_styles %}
 <!-- Custom CSS -->
-<link href="{{ url_for('static', filename='css/information_styles.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/contacts_styles.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 {% import 'macros.html' as macros %}
 <div class="container">
-    {% set information = translations.information %}
-    <h1 class="heading mt-0 text-center">{{ information.title }}</h1>
+    {% set contacts = translations.contacts %}
+    <h1 class="heading mt-0 text-center">{{ contacts.title }}</h1>
     <hr class="mb-0">
     <!--    location details-->
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-6 d-flex flex-column">
-                <h2 class="heading">{{ information.connections }}</h2>
-                {% set location = information.location %}
+                <h2 class="heading">{{ contacts.connections }}</h2>
+                {% set location = contacts.location %}
                 <ul class="location_details flex-grow-1">
                     <li class="location_detail">{{ location.address }}</li>
                     <li class="location_detail">{{ location.tram_stop.name }} - {{ location.tram_stop.distance }}
@@ -31,7 +31,7 @@
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-md-block">
                 <!-- Buttons to display map or open in a new window -->
-                <div id="map-button-container" class="d-flex flex-column text-center large-information-content ">
+                <div id="map-button-container" class="d-flex flex-column text-center large-contact-content ">
                     <button id="display-map-button" class="btn btn-outline-purple mb-5">
                             <span class="d-block map-button-text">
                                 {{ location.map_frame_button_text }}
@@ -47,7 +47,7 @@
                 </div>
 
                 <!-- Placeholder for iframe, initially empty -->
-                <div id="iframe-container" class="large-information-content flex-grow-1 d-none"></div>
+                <div id="iframe-container" class="large-contact-content flex-grow-1 d-none"></div>
             </div>
 
             <!-- Display button for small screens -->
@@ -69,11 +69,11 @@
                 base_path='img',
                 base_filename='entrance',
                 alt_text=translations.gallery.alt_text,
-                classes=['large-information-content', 'img-fluid']
+                classes=['large-contact-content', 'img-fluid']
                 ) }}
             </div>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
-                <h2 class="information-heading">{{ information.opening_hours.heading }}</h2>
+                <h2 class="contact-heading">{{ contacts.opening_hours.heading }}</h2>
                 <div class="opening-hours-content flex-grow-1">
                     {% include "opening_hours.html" %}
                 </div>
@@ -86,7 +86,7 @@
     <div class="container mt-4 mb-4">
         <div class="row">
             <div class="col-12 col-md-6 text-center mb-2">
-                <h2 class="information-heading"> Chat </h2>
+                <h2 class="contact-heading"> Chat </h2>
                 <a href="https://www.instagram.com/direct/t/17842514916029460" class="btn btn-outline-purple"
                    target="_blank"
                    aria-label="instagram chat">
@@ -94,7 +94,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-6 text-center">
-                <h2 class="information-heading"> Email </h2>
+                <h2 class="contact-heading"> Email </h2>
                 <a href="mailto:club-termix@club-termix.cz" class="btn btn-outline-purple">
                     <i class="bi bi-envelope-at-fill"></i> club-termix@club-termix.cz
                 </a>
@@ -107,7 +107,7 @@
     <!--additional info-->
     <div class="row justify-content-center align-items-center mt-5">
         <div class="col-md-12 col-lg-8 col-xl-6 text-center">
-            <h2 class="information-heading">{{ information.additional_info.heading }}</h2>
+            <h2 class="contact-heading">{{ contacts.additional_info.heading }}</h2>
             <div class="card">
                 <div class="card-header"></div>
                 <div class="card-body pt-1">
@@ -117,7 +117,7 @@
                         <table class="table table-bordered mb-2">
                             <tbody>
                             <tr>
-                                <td class="address text-center">{{ information.ageRestriction }}</td>
+                                <td class="address text-center">{{ contacts.ageRestriction }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -125,7 +125,7 @@
                         <i class="bi bi-cash-coin normal-icon mb-1"></i>
                         <table class="table table-bordered mb-2">
                             <tbody>
-                            {% for payment in information.payments %}
+                            {% for payment in contacts.payments %}
                             <tr>
                                 <td class="address text-center">{{ payment }}</td>
                             </tr>
@@ -137,7 +137,7 @@
                         <table class="table table-bordered mb-2">
                             <tbody>
                             <tr>
-                                <td class="address text-center">{{ information.cloakroom }}</td>
+                                <td class="address text-center">{{ contacts.cloakroom }}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -153,7 +153,7 @@
     <div class="d-flex justify-content-center">
         <table class="mt-0 mb-0 text-center">
             <tr>
-                <td>{{ information.operator }}:</td>
+                <td>{{ contacts.operator }}:</td>
                 <td>Termix Praha s.r.o.</td>
             </tr>
             <tr>
@@ -170,5 +170,5 @@
 {% endblock %}
 
 {% block extra_scripts %}
-<script src="{{ url_for('static', filename='js/script_information.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script_contacts.js') }}"></script>
 {% endblock %}

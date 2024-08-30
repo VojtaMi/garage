@@ -44,16 +44,15 @@ def configure_routes(app):
         lang = request.args.get('lang')
         return render_template('gallery.html', translations=get_translations(lang), lang=lang)
 
-    @app.route('/information')
-    def information():
+    @app.route('/contacts')
+    def contacts():
         lang = request.args.get('lang')
-        return render_template('information.html', translations=get_translations(lang), lang=lang)
+        return render_template('contacts.html', translations=get_translations(lang), lang=lang)
 
     @app.route('/drink_menu')
     def drink_menu():
         lang = request.args.get('lang')
         return render_template('drink_menu.html', translations=get_translations(lang), lang=lang)
-
 
     @app.route('/events')
     def events():

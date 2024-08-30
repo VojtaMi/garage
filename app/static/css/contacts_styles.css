@@ -1,4 +1,4 @@
-.large-information-content {
+.large-contact-content {
   object-fit: cover;
   height: 100%; /* Ensure the iframe takes full height */
   width: 100%; /* Ensure the iframe takes full width */
@@ -33,7 +33,7 @@
     font-size: 1rem;
 }
 
-.information-heading {
+.contact-heading {
   margin-bottom: 4rem; /* Adjust the value as needed */
   color: var(--cream-purple);
 }
@@ -55,14 +55,14 @@
     vertical-align: middle;    /* Vertical centering */
 }
 
-.information-container {
+.contact-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     min-height: 100%;
 }
-.information-heading{
+.contact-heading{
     margin-bottom: 2rem;
 }
 
@@ -90,7 +90,7 @@ footer {
   .location_detail {
     margin-bottom: 0; /* Adjust the value as needed */
   }
-  .information-heading {
+  .contact-heading {
     margin-bottom: 1rem; /* Adjust the value as needed */
     margin-top: 1rem; /* Adjust the value as needed */
   }

@@ -2,6 +2,9 @@
 :root {
     --black-green: #212606;
     --army-green: #629102;
+    --army-yellow: #8A7E00;
+    --brown-yellow: #524B00;
+
     --dark-purple: #6038a7;
     --purple: #6f42c1;
     --lighter-purple: #8354d5;
@@ -51,7 +54,7 @@ h1 {
 }
 
 .card-header{
-    background-color: var(--purple); /* purple */
+    background-color: var(--army-green); /* purple */
     height: 2.2rem;
 }
 
@@ -73,15 +76,13 @@ h1 {
     color: white; /* Text color on hover */
 }
 
-.btn-primary-purple {
-    background-color: var(--purple); /* purple */
-    border-color: var(--purple);
+.btn-primary-yellow {
+    background-color: var(--army-yellow);
     color: white; /* Text color on hover */
 }
 
-.btn-primary-purple:hover {
-    background-color: var(--dark-gray-purple); /* Background color */
-    border-color: var(--dark-gray-purple); /* Border color on hover */
+.btn-primary-yellow:hover {
+    background-color: var(--brown-yellow); /* Background color */
     color: white; /* Text color on hover */
 }
 /* aniated rounded images */
