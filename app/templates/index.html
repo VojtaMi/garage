@@ -18,24 +18,8 @@
 </div>
 
 <div class="container marketing pt-3">
-    <!-- Feature List -->
-    <div id="feature_list" class="row justify-content-center">
-        {% for feature in translations.home.features %}
-        <div class="col-lg-4 col-sm-6 text-center">
-            <img src="{{ url_for('static', filename='assets/img/' ~ feature.image) }}" alt="{{ feature.altText }}"
-                 class="rounded-circle img-hover">
-
-            <h2>{{ feature.title }}</h2>
-            <p>{{ feature.description[0] }}<br>{{ feature.description[1] }}</p>
-            <p><a class="btn btn-primary-purple" href="{{ url_for(feature.buttonLink, lang=lang) }}">{{
-                feature.buttonText
-                }}</a></p>
-        </div>
-        {% endfor %}
-    </div>
-
     <!-- Featurette Section -->
-    <hr class="featurette-divider">
+    <hr>
     {% for featurette in translations.home.featurettes %}
     <div class="row featurette">
         <div class="col-md-7 {% if loop.index is divisibleby 2 %}order-md-2{% endif %}">

@@ -30,14 +30,6 @@
 
 <body>
 
-{% macro instagram_link() %}
-<a href="https://www.instagram.com/termix_club/" target="_blank"
-   class="nav-link px-3 text-body-secondary"
-   aria-label="instagram">
-    <i class="bi bi-instagram normal-icon"></i>
-</a>
-{% endmacro %}
-
 {% macro facebook_link() %}
 <a href="https://www.facebook.com/club.termix/" target="_blank"
    class="nav-link px-3 text-body-secondary"
@@ -69,9 +61,6 @@
             {{ logo_link() }}
             <div class="d-none d-sm-block">
                 {{ facebook_link() }}
-            </div>
-            <div class="d-none d-sm-block">
-                {{ instagram_link() }}
             </div>
         </div>
 
@@ -116,6 +105,7 @@
 <!-- Footer -->
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2003–{{ current_year }} Termix Praha s.r.o.</p>
         {{ logo_link() }}
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item footer-logo">
@@ -124,11 +114,7 @@
             <li class="nav-item footer-logo">
                 {{ facebook_link() }}
             </li>
-            <li class="nav-item">
-                {{ instagram_link() }}
-            </li>
         </ul>
-        <p class="col-md-4 mb-0 mt-2 text-body-secondary">© 2003–{{ current_year }} Termix Praha s.r.o.</p>
     </footer>
 </div>
 
