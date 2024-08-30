@@ -8,12 +8,13 @@
     "featurettes": [
       {
         "heading": [
-          "We can shake it up.",
-          "Come see for yourself."
+          "Gay cruising bar",
+          "in central Prague"
         ],
         "description": [
-          "Our bartenders are professionals.",
-          "They can mix you a top-notch taste experience."
+          "Discreet environment",
+          "For men only.",
+          "18+"
         ],
         "image": {
           "altText": "swing BDSM",
@@ -69,26 +70,30 @@
   "opening_hours": [
     {
       "day": "Wednesday",
-      "hours": "10:00 PM - 5:00 AM"
+      "hours": "8:00 PM - 6:30 AM"
     },
     {
       "day": "Thursday",
-      "hours": "10:00 PM - 5:00 AM"
+      "hours": "8:00 PM - 6:30 AM"
     },
     {
       "day": "Friday",
-      "hours": "10:00 PM - 6:00 AM"
+      "hours": "8:00 PM - 6:30 AM"
     },
     {
       "day": "Saturday",
-      "hours": "10:00 PM - 6:00 AM"
+      "hours": "8:00 PM - 6:30 AM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8:00 PM - 6:30 AM"
     }
   ],
   "contacts": {
     "title": "contacts",
     "connections": "Connection",
     "location": {
-      "address": "Třebízského 4a, Prague 2",
+      "address": "Balbínova 224/3, Prague 2",
       "tram_stop": {
         "name": "Vinohradská tržnice (tram)",
         "distance": "100m"

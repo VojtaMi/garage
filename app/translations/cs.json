@@ -13,7 +13,8 @@
         ],
         "description": [
           "Diskrétní prostředí",
-          "Pouze pro gentlemeny."
+          "Pouze pro muže.",
+          "18+"
         ],
         "image": {
           "altText": "houpačka BDSM",
@@ -66,26 +67,30 @@
   "opening_hours": [
     {
       "day": "Středa",
-      "hours": "22:00 - 5:00"
+      "hours": "20:00 - 6:30"
     },
     {
       "day": "Čtvrtek",
-      "hours": "22:00 - 5:00"
+      "hours": "20:00 - 6:30"
     },
     {
       "day": "Pátek",
-      "hours": "22:00 - 6:00"
+      "hours": "20:00 - 6:30"
     },
     {
       "day": "Sobota",
-      "hours": "22:00 - 6:00"
+      "hours": "20:00 - 6:30"
+    },
+    {
+      "day": "Neděle",
+      "hours": "20:00 - 6:30"
     }
   ],
   "contacts": {
     "title": "Kontakty",
     "connections": "Spojení",
     "location": {
-      "address": "Třebízského 4a, Praha 2",
+      "address": "Balbínova 224/3, Praha 2",
       "tram_stop": {
         "name": "Vinohradská tržnice (tram)",
         "distance": "100m"

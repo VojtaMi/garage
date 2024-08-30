@@ -120,6 +120,23 @@ h1 {
     max-width: 100%;
 }
 
+.day-name{
+  font-family: "Bebas Neue", sans-serif;
+}
+#opening_hours_table {
+    min-height: 70%;
+}
+#opening_hours_table td {
+    text-align: center;        /* Horizontal centering */
+    vertical-align: middle;    /* Vertical centering */
+}
+
+@media (min-width: 992px) {
+    #opening_hours_table td {
+        font-size: 1.1rem;
+    }
+}
+
 
 #disclaimer{
     color: var(--light-gray);

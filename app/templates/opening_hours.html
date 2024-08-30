@@ -2,7 +2,7 @@
     <tbody>
     {% for record in translations.opening_hours %}
     <tr>
-        <td>{{ record.day }}</td>
+        <td class="day-name">{{ record.day }}</td>
         <td>{{ record.hours }}</td>
     </tr>
     {% endfor %}

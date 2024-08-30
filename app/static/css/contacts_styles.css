@@ -47,13 +47,7 @@
     margin-left: 0.3rem;
 }
 
-#opening_hours_table {
-    min-height: 70%;
-}
-#opening_hours_table td {
-    text-align: center;        /* Horizontal centering */
-    vertical-align: middle;    /* Vertical centering */
-}
+
 
 .contact-container {
     display: flex;
@@ -70,11 +64,6 @@ footer {
   margin-top: 1rem;
 }
 
-@media (min-width: 992px) {
-    #opening_hours_table td {
-        font-size: 1.1rem;
-    }
-}
 
 @media (max-width: 991px) {
   .location_details {
