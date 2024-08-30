@@ -21,25 +21,46 @@
     <!-- Featurette Section -->
     <hr>
     {% for featurette in translations.home.featurettes %}
-    <div class="row featurette">
-        <div class="col-md-7 {% if loop.index is divisibleby 2 %}order-md-2{% endif %}">
-            <h2 class="featurette-heading fw-normal lh-1">
-                {{ featurette.heading[0] }}
-                <span class="text-body-secondary-custom">{{ featurette.heading[1] }}</span>
-            </h2>
+    <div class="row">
+        <h2 class="featurette-heading fw-normal lh-1">
+            {{ featurette.heading[0] }}
+            <span class="text-body-secondary-custom">{{ featurette.heading[1] }}</span>
+        </h2>
+        <div class="col-10 col-md-5">
             <p class="lead">
-                {{ featurette.description[0] }}<br>{{ featurette.description[1] }}
+                {{ featurette.description[0] }}
+            </p>
+            <p class="lead">
+                {{ featurette.description[1] }}
             </p>
         </div>
-        <div class="col-md-5 {% if loop.index is divisibleby 2 %}order-md-1{% endif %}">
-            <picture>
-                <source media="(min-width: 430px) and (max-width: 767.5px)"
-                        srcset="{{ url_for('static', filename=featurette.image.src_wide) }}">
-                <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
-                     class="img-fluid mx-auto">
-            </picture>
+        <div class="col-12 col-md-7">
+            <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
+                 class="img-fluid mx-auto">
         </div>
+
     </div>
+
+
+    <!-- <div class="row featurette">
+         <h2 class="featurette-heading fw-normal lh-1">
+             {{ featurette.heading[0] }}
+             <span class="text-body-secondary-custom">{{ featurette.heading[1] }}</span>
+         </h2>
+         <div class="col-md-7 {% if loop.index is divisibleby 2 %}order-md-2{% endif %}">
+             <p class="lead">
+                 {{ featurette.description[0] }}<br>{{ featurette.description[1] }}
+             </p>
+         </div>
+         <div class="col-md-5 {% if loop.index is divisibleby 2 %}order-md-1{% endif %}">
+             <picture>
+                 <source media="(min-width: 430px) and (max-width: 767.5px)"
+                         srcset="{{ url_for('static', filename=featurette.image.src_wide) }}">
+                 <img src="{{ url_for('static', filename=featurette.image.src_wide) }}" alt="{{ featurette.image.altText }}"
+                      class="img-fluid mx-auto">
+             </picture>
+         </div>
+     </div>-->
     <hr class="featurette-divider">
     {% endfor %}
 

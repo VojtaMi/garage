@@ -54,10 +54,6 @@ def configure_routes(app):
         lang = request.args.get('lang')
         return render_template('drink_menu.html', translations=get_translations(lang), lang=lang)
 
-    @app.route('/about')
-    def about():
-        lang = request.args.get('lang')
-        return render_template('about.html', translations=get_translations(lang), lang=lang)
 
     @app.route('/events')
     def events():

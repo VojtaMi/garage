@@ -5,41 +5,6 @@
       "altText": "Bar",
       "title": "Club Garage Prague"
     },
-    "features": [
-      {
-        "altText": "Tray with drinks",
-        "title": "Amazing drinks",
-        "description": [
-          "Wide selection of beverages.",
-          "Try out our chilled cocktails."
-        ],
-        "buttonText": "Drinks »",
-        "buttonLink": "drink_menu",
-        "image": "drinks.jpg"
-      },
-      {
-        "altText": "Microphone",
-        "title": "Entertainment",
-        "description": [
-          "Dance to the popular songs.",
-          "Wed-Sat, from 10 PM."
-        ],
-        "buttonText": "Info »",
-        "buttonLink": "information",
-        "image": "karaoke.jpg"
-      },
-      {
-        "altText": "Man with devil mask",
-        "title": "Themed Parties",
-        "description": [
-          "No shortage of events.",
-          "Come and experience great fun."
-        ],
-        "buttonText": "Gallery »",
-        "buttonLink": "gallery",
-        "image": "party.jpg"
-      }
-    ],
     "featurettes": [
       {
         "heading": [
@@ -51,39 +16,9 @@
           "They can mix you a top-notch taste experience."
         ],
         "image": {
-          "altText": "bartender",
-          "src": "assets/img/barman.jpg",
-          "src_wide": "assets/img/barman_wide.jpg"
-        }
-      },
-      {
-        "heading": [
-          "An interior that entertains.",
-          "We are waiting for you."
-        ],
-        "description": [
-          "A place to sit with friends or have a big party?",
-          "We are ready."
-        ],
-        "image": {
-          "altText": "Interior",
-          "src": "assets/img/car.jpg",
-          "src_wide": "assets/img/car_wide.jpg"
-        }
-      },
-      {
-        "heading": [
-          "We go even after midnight.",
-          "Show us how you can get the party started."
-        ],
-        "description": [
-          "You can party with us from Wednesday to Saturday.",
-          "We are open from 10 PM until the morning."
-        ],
-        "image": {
-          "altText": "Party",
-          "src": "assets/img/night_life.jpg",
-          "src_wide": "assets/img/night_life_wide.jpg"
+          "altText": "swing BDSM",
+          "src": "assets/img/swing.avif",
+          "src_wide": "assets/img/swing-wide.avif"
         }
       }
     ]

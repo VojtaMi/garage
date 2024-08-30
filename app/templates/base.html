@@ -21,6 +21,9 @@
     <!-- Google Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Edu+AU+VIC+WA+NT+Hand&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 
     {% block extra_styles %}
@@ -82,8 +85,6 @@
             <ul class="navbar-nav me-auto mb-2">
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
                     translations.home.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('about', lang=lang) }}">{{
-                    translations.about.title }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('events', lang=lang) }}">{{
                     translations.events.title }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('information', lang=lang) }}">{{

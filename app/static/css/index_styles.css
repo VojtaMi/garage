@@ -64,23 +64,26 @@
 
 /* larger marketing sections */
 .featurette-heading {
-    font-size: 50px;
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .text-body-secondary-custom {
-    color: var(--lighter-purple); /* Sets the text color */
+    color: var(--army-green); /* Sets the text color */
 }
 .lead{
      padding-top: 1rem;
-     font-size: 1.7rem;
+     font-size: 2rem;
+     font-family: "Raleway", sans-serif;
+     margin-bottom: 2rem;
+     margin-top: 2rem;
 }
 
 @media (max-width: 991px) {
-    .featurette-heading {
-    font-size: 40px;
-  }
   .lead{
-     font-size: 1.25rem;
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+     margin-top: 1rem;
     }
 }
 
@@ -110,9 +113,6 @@
 }
  }
 @media (max-width: 576px) {
-  .featurette-heading {
-    font-size: 30px;
-  }
   .featurette-divider {
   margin: 2rem; /* Space out the Bootstrap <hr> more */
   }

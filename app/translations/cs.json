@@ -5,85 +5,20 @@
       "altText": "Bar",
       "title": "Club Garage Praha"
     },
-    "features": [
-      {
-        "altText": "Tác s drinky",
-        "title": "Lahodné drinky",
-        "description": [
-          "Široká nabídka nápojů.",
-          "Vyzkoušejte vychlazené koktejly."
-        ],
-        "buttonText": "Nápoje »",
-        "buttonLink": "drink_menu",
-        "image": "drinks.jpg"
-      },
-      {
-        "altText": "Mikrofon",
-        "title": "Zábava",
-        "description": [
-          "Zatancujte si s populárními hity.",
-          "Středa až sobota od 10 večer."
-        ],
-        "buttonText": "Info »",
-        "buttonLink": "information",
-        "image": "karaoke.jpg"
-      },
-      {
-        "altText": "Muž s maskou čerta",
-        "title": "Tématické párty",
-        "description": [
-          "O akce u nás není nouze.",
-          "Přijďte zažít pořádnou zábavu."
-        ],
-        "buttonText": "Galerie »",
-        "buttonLink": "gallery",
-        "image": "party.jpg"
-      }
-    ],
     "featurettes": [
       {
         "heading": [
-          "Umíme to roztřepat.",
-          "Přijďte se o tom přesvědčit."
+          "Gay cruising bar",
+          "v centru Prahy."
         ],
         "description": [
-          "Naši barmani jsou profíci.",
-          "Dokáží vám namixovat prvotřídní chuťový zážitek."
+          "Diskrétní prostředí",
+          "Pouze pro gentlemeny."
         ],
         "image": {
-          "altText": "barman",
-          "src": "assets/img/barman.jpg",
-          "src_wide": "assets/img/barman_wide.jpg"
-        }
-      },
-      {
-        "heading": [
-          "Interiér, který baví.",
-          "čekáme na vás."
-        ],
-        "description": [
-          "Místo na posezení s přáteli, nebo pořádnou oslavu?",
-          "Jsme připraveni."
-        ],
-        "image": {
-          "altText": "Interiér",
-          "src": "assets/img/car.jpg",
-          "src_wide": "assets/img/car_wide.jpg"
-        }
-      },
-      {
-        "heading": [
-          "U nás jedeme i po půlnoci.",
-          "Ukaž, jak to umíš rozjet."
-        ],
-        "description": [
-          "Roztočit to u nás můžes od středy do soboty.",
-          "Otevřeno máme od desíti až do rána."
-        ],
-        "image": {
-          "altText": "Párty",
-          "src": "assets/img/night_life.jpg",
-          "src_wide": "assets/img/night_life_wide.jpg"
+          "altText": "houpačka BDSM",
+          "src": "assets/img/swing.avif",
+          "src_wide": "assets/img/swing-wide.avif"
         }
       }
     ]
