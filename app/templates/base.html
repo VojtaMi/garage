@@ -52,7 +52,7 @@
 {% macro logo_link() %}
 <a href="{{ url_for('home', lang=lang) }}" aria-label="{{ translations.home.title }}">
     <img src="{{ url_for('static', filename='assets/logos/garage_light_gray.png') }}"
-         class="link-logo"
+         class="link-logo home-scroll-up"
          alt="Garage Logo">
 </a>
 {% endmacro %}
