@@ -92,12 +92,12 @@
     "location": {
       "address": "Balbínova 224/3, Praha 2",
       "tram_stop": {
-        "name": "Vinohradská tržnice (tram)",
+        "name": "I. P. Pavlova (tram)",
         "distance": "100m"
       },
       "metro": {
-        "name": "Jiřího z Poděbrad",
-        "distance": "500m"
+        "name": "Muzeum",
+        "distance": "400m"
       },
       "map_frame_button_text": "Zobrazit mapu zde",
       "cookie_disclaimer": "používá cookies",
@@ -111,8 +111,7 @@
     },
     "ageRestriction": "Vstup od 18",
     "payments": [
-      "Pouze hotovost",
-      "Bankomat"
+      "Pouze hotovost"
     ],
     "cloakroom": "Šatna",
     "additional_info": {

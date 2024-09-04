@@ -44,6 +44,7 @@ h1 {
 /*heading - green h1*/
 .heading{
     font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
     color: var(--army-yellow);
     margin-bottom: 4rem;
 }
@@ -66,7 +67,14 @@ h1 {
 .icon{
     height: 1.4rem;
 }
+.btn-primary-yellow{
+    font-family: "Bebas Neue", sans-serif;
+    background-color: var(--army-yellow); /* Text color */
+}
+
 .btn-outline-green {
+    font-size: 1.4rem;
+    font-family: "Bebas Neue", sans-serif;
     color: var(--army-green); /* Text color */
     border: 1px solid var(--army-green); /* Border color */
     background-color: transparent; /* No background */

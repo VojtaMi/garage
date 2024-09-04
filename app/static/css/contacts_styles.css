@@ -26,15 +26,13 @@
   border-radius: 5px; /* Optional: Add rounded corners */
 }
 
-.map-button-text{
-    font-size: 1.1rem;
-}
 .cookie-text{
     font-size: 1rem;
 }
 
 .contact-heading {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
   margin-bottom: 4rem; /* Adjust the value as needed */
   color: var(--army-green);
 }
