@@ -57,6 +57,10 @@
 </a>
 {% endmacro %}
 
+{% macro nav_link(endpoint, label) %}
+<li class="nav-item"><a class="nav-link" href="{{ url_for(endpoint, lang=lang) }}">{{ label }}</a></li>
+{% endmacro %}
+
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
     <div class="container-fluid">
@@ -83,16 +87,11 @@
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarsExample01">
             <ul class="navbar-nav me-auto mb-2">
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('home', lang=lang) }}">{{
-                    translations.home.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('events', lang=lang) }}">{{
-                    translations.events.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('contacts', lang=lang) }}">{{
-                    translations.contacts.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('drink_menu', lang=lang) }}">{{
-                    translations.drink_menu.title }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery', lang=lang) }}">{{
-                    translations.gallery.title }}</a></li>
+                {{ nav_link('home', translations.home.title) }}
+                {{ nav_link('events', translations.events.title) }}
+                {{ nav_link('contacts', translations.contacts.title) }}
+                {{ nav_link('drink_menu', translations.drink_menu.title) }}
+                {{ nav_link('gallery', translations.gallery.title) }}
             </ul>
         </div>
     </div>
