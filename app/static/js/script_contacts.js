@@ -14,7 +14,7 @@ document.getElementById('display-map-button').addEventListener('click', function
     iframe.style.border = 'none';
     iframe.style.width = '100%';
     iframe.style.height = '400px';
-    iframe.src = 'https://en.frame.mapy.cz/s/casumubehu';
+    iframe.src = 'https://frame.mapy.cz/s/mavolorodo';
     iframe.frameBorder = '0';
 
     // Append the iframe to the container

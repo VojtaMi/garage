@@ -41,10 +41,11 @@ footer{
 h1 {
     font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
 }
-/*heading - purple h1*/
+/*heading - green h1*/
 .heading{
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--army-yellow);
     margin-bottom: 4rem;
-    color: var(--cream-purple);
 }
 
 @media (max-width: 991px) {
@@ -65,26 +66,28 @@ h1 {
 .icon{
     height: 1.4rem;
 }
-.btn-outline-purple {
-    color: var(--cream-purple); /* Text color */
-    border: 1px solid var(--cream-purple); /* Border color */
+.btn-outline-green {
+    color: var(--army-green); /* Text color */
+    border: 1px solid var(--army-green); /* Border color */
     background-color: transparent; /* No background */
 }
 
-.btn-outline-purple:hover {
-    background-color: var(--purple); /* Background color on hover */
+.btn-outline-green:hover {
+    background-color: var(--brown-yellow); /* Background color on hover */
     color: white; /* Text color on hover */
 }
 
-.btn-primary-yellow {
-    background-color: var(--army-yellow);
+.btn-outline-yellow {
+    color: var(--army-yellow); /* Text color */
+    border: 1px solid var(--army-yellow); /* Border color */
+    background-color: transparent; /* No background */
+}
+
+.btn-outline-yellow:hover {
+    background-color: var(--brown-yellow); /* Background color on hover */
     color: white; /* Text color on hover */
 }
 
-.btn-primary-yellow:hover {
-    background-color: var(--brown-yellow); /* Background color */
-    color: white; /* Text color on hover */
-}
 /* aniated rounded images */
 /* fast links bellow title image for title page, logos at about page */
 .rounded-circle {

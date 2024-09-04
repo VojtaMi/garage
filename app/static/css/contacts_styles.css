@@ -21,7 +21,7 @@
 #map-button-container {
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--cream-purple); /* Applying the border and color */
+  border: 2px solid var(--army-yellow); /* Applying the border and color */
   padding: 10px; /* Optional: Add some padding */
   border-radius: 5px; /* Optional: Add rounded corners */
 }
@@ -34,8 +34,9 @@
 }
 
 .contact-heading {
+  font-family: "Bebas Neue", sans-serif;
   margin-bottom: 4rem; /* Adjust the value as needed */
-  color: var(--cream-purple);
+  color: var(--army-green);
 }
 
 #disclaimer table {
