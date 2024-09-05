@@ -35,6 +35,11 @@ footer{
         width: 2rem;
     }
 }
+
+.navbar-nav{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+}
 /*base styles end*/
 
 /*shared styles*/

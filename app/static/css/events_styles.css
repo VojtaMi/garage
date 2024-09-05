@@ -32,7 +32,7 @@
 }
 
 .flip-card-back {
-    background-color: var(--dark-purple);
+    background-color: var(--army-green);
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
@@ -42,9 +42,13 @@
     transform: rotateY(180deg);
     padding: 20px;
 }
+.flip-card-back h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
 
 .flip-card-back p {
     font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
 }
 
 .card-picture{
@@ -52,11 +56,11 @@
     height: 100%
 }
 
-.btn-primary-purple{
+.btn-primary-yellow{
     font-size: 1.2rem;
 }
 
-.btn-primary-purple .bi-facebook{
+.btn-primary-yellow .bi-facebook{
     font-size: 1.7rem;
 }
 
@@ -78,7 +82,7 @@
     }
     /* Hover effect with shadow */
     .gallery-picture:hover {
-        box-shadow: 0 0 10px var(--lighter-purple);
+        box-shadow: 0 0 10px var(--army-green);
         transform: scale(1.05); /* Slightly zoom in */
     }
 }

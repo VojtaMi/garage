@@ -40,25 +40,11 @@
     "title": "Events",
     "event_list": [
       {
-        "title": "21st birthday of TerMix",
-        "date": "August 24, 2024",
-        "description": "A party celebrating the anniversary of our club's founding.",
-        "img_filename": "birthday-21_24",
-        "aria-label": "21. anniversary of TerMix, August 24 2024"
-      },
-      {
-        "title": "Karaoke",
-        "date": "Every wednesday",
-        "description": "Join us to sing along to popular hits, or just come to dance.",
-        "img_filename": "karaoke_party_24",
-        "aria-label": "Karaoke party, every wednesday. DJ Marty Blue"
-      },
-      {
-        "title": "Flirt party",
-        "date": "August 10, 2024",
-        "description": "The perfect opportunity to meet someone new. Find a partner for a date, a flirt, or just come to have fun.",
-        "img_filename": "pride-flirt_24",
-        "aria_label": "Pride flirt party, August 10 2024. Entry fee 300 Kč. DJ JFK."
+        "title": "New Year's eve",
+        "date": "December 31, 2023",
+        "description": "Let's come to celebrate new year in your favourite gay bar.",
+        "img_filename": "new_year_party",
+        "aria-label": "New Year Party, December 31 2023"
       }
     ],
     "aria-label-card": "Click to see details",

@@ -40,25 +40,11 @@
     "title": "Akce",
     "event_list": [
       {
-        "title": "21. narozeniny klubu TerMix",
-        "description": "Párty k výročí založení našeho klubu.",
-        "date": "24. 8. 2024",
-        "img_filename": "birthday-21_24",
-        "aria-label": "21. narozeniny klubu TerMix, 24. 8. 2024"
-      },
-      {
-        "title": "Karaoke",
-        "date": "Každou středu",
-        "description": "Pojď se připojit ke známým hitům, nebo si jen zatančit.",
-        "img_filename": "karaoke_party_24",
-        "aria-label": "Karaoke party, každou středu. DJ Marty Blue"
-      },
-      {
-        "title": "Flirt party",
-        "description": "Ideální příležitost na seznámení. Najdi si partnera na rande, na flirt, nebo se přijď jen pobavit.",
-        "date": "10. 8. 2024",
-        "img_filename": "pride-flirt_24",
-        "aria_label": "Pride flirt party, 10. 8. 2024. Vstupné 300 Kč. DJ JFK."
+        "title": "Silvestrovská Párty",
+        "description": "Přijďdte oslavit Silvestra do vašeho oblíbeného gay baru.",
+        "date": "31. 12. 2023",
+        "img_filename": "new_year_party",
+        "aria-label": "Silvestrovská párty, 31. 12. 2023"
       }
     ],
     "aria-label-card":"Klikněte pro zobrazení informací",
