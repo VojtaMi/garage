@@ -910,5 +910,11 @@
   },
   "navbar": {
     "aria_label": "Show navigation"
+  },
+   "age_verification": {
+    "title": "Adult business",
+    "disclaimer": "Club Garage is only available to adult men. Please confirm your eligibility to enter.",
+    "approve": "I am 18 or older",
+    "decline": "Leave"
   }
 }

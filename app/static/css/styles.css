@@ -2,6 +2,7 @@
 :root {
     --black-green: #212606;
     --army-green: #629102;
+    --army-green-dark :#476a01;
     --army-yellow: #8A7E00;
     --brown-yellow: #524B00;
 
@@ -77,6 +78,14 @@ footer{
 
 .btn-primary-yellow:hover{
     background-color: var(--brown-yellow); /* Text color */
+}
+
+.btn-primary-green{
+    background-color: var(--army-green); /* Text color */
+}
+
+.btn-primary-green:hover{
+    background-color: var(--army-green-dark); /* Text color */
 }
 
 .btn-outline-green {

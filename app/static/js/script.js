@@ -32,3 +32,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Age verification popup
+ document.addEventListener("DOMContentLoaded", function() {
+    if (!sessionStorage.getItem("ageConfirmed")) {
+      var ageModal = new bootstrap.Modal(document.getElementById('ageVerificationModal'), {
+        backdrop: 'static', // Prevent closing by clicking outside
+        keyboard: false // Disable closing with ESC key
+      });
+      ageModal.show();
+    }
+
+    document.getElementById("confirm-age").addEventListener("click", function() {
+      sessionStorage.setItem("ageConfirmed", true);
+      var ageModal = bootstrap.Modal.getInstance(document.getElementById('ageVerificationModal'));
+      ageModal.hide();
+    });
+
+    document.getElementById("exit-site").addEventListener("click", function() {
+      window.location.href = "https://www.google.com";
+    });
+  });
+

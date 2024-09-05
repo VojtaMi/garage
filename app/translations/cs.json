@@ -907,5 +907,11 @@
   },
   "navbar": {
     "aria_label": "Zobrazit navigaci"
+  },
+  "age_verification": {
+    "title": "Podnik pro dospělé",
+    "disclaimer": "Club Garage je dostupný pouze pro muže nad 18 let. Potvrďte prosím svou způsobilost pro vstup.",
+    "approve": "Je mi 18+",
+    "decline": "Odejít"
   }
 }
