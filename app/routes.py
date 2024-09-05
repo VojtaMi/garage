@@ -39,11 +39,6 @@ def configure_routes(app):
             return redirect_browser_lang()
         return render_template('index.html', translations=get_translations(lang), lang=lang)
 
-    @app.route('/gallery')
-    def gallery():
-        lang = request.args.get('lang')
-        return render_template('gallery.html', translations=get_translations(lang), lang=lang)
-
     @app.route('/contacts')
     def contacts():
         lang = request.args.get('lang')

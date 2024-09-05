@@ -45,10 +45,13 @@ footer{
 
 /*shared styles*/
 
+h1{
+    font-size: clamp(3.5rem, 5vw + 1rem, 6rem);
+}
+
 /*heading - army-yellow h1*/
 .heading{
     font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(3.5rem, 5vw + 1rem, 6rem);
     color: var(--army-yellow);
     margin-bottom: 4rem;
 }
@@ -60,7 +63,7 @@ footer{
 }
 
 .card-header{
-    background-color: var(--army-green); /* purple */
+    background-color: var(--army-yellow); /* purple */
     height: 2.2rem;
 }
 

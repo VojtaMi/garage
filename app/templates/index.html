@@ -3,6 +3,16 @@
 {% block extra_styles %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/index_styles.css') }}" rel="stylesheet">
+
+<!-- jQuery (needed for Lightbox2) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<!-- Lightbox2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+
 {% endblock %}
 
 {% block content %}
@@ -37,6 +47,25 @@
 </div>
 {% endmacro %}
 
+
+{% macro gallery_element(base_filename, alt_text) %}
+<!-- Element 1: Visible only on screens smaller than xl (less than 1200px) -->
+<div class="d-none d-xl-block">
+    <a href="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}" data-lightbox="gallery"
+       data-title="{{ translations.gallery.alt_text }}">
+        <img src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
+             class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
+             alt="alt_text">
+    </a>
+</div>
+<div class="d-xl-none">
+    <img src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
+         class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
+         alt="alt_text">
+</div>
+
+{% endmacro %}
+
 <!-- Poster Image -->
 <div id="poster" class="mb-5">
     {% set poster = translations.home.poster %}
@@ -48,7 +77,7 @@
     </div>
 </div>
 
-<div class="container marketing pt-3">
+<div class="container pt-3">
     <!-- Featurette Section -->
     <hr>
     {% for featurette in translations.home.featurettes %}
@@ -62,72 +91,92 @@
     <!-- Desktop view: Alternate image and content based on index -->
     <div class="row d-none d-md-flex">
         {% if loop.index is divisibleby 2 %}
-            {{ featurette_img(featurette) }}
-            {{ featurette_content(featurette) }}
+        {{ featurette_img(featurette) }}
+        {{ featurette_content(featurette) }}
         {% else %}
-            {{ featurette_content(featurette) }}
-            {{ featurette_img(featurette) }}
+        {{ featurette_content(featurette) }}
+        {{ featurette_img(featurette) }}
         {% endif %}
     </div>
 
     <hr class="featurette-divider">
+    {% endfor %}
+</div>
 
-{% endfor %}
-
-
-    <!-- buttons -->
+<div class="container" >
+     <!-- buttons -->
     <div class="row mb-3 d-flex justify-content-center mt-0">
-        <div class="col-12 col-sm-4 text-center mb-3">
+        <div class="col-12 col-sm-4 text-center mb-4">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('events', lang=lang) }}">
                 {{ translations.events.title }}</a>
         </div>
-        <div class="col-12 col-sm-4 text-center mb-3">
+        <div class="col-12 col-sm-4 text-center mb-4">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('drink_menu', lang=lang) }}">
                 {{ translations.drink_menu.title }}</a>
         </div>
-        <div class="col-12 col-sm-4 text-center mb-3">
+        <div class="col-12 col-sm-4 text-center mb-1">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('contacts', lang=lang) }}">
                 {{ translations.contacts.title }}</a>
         </div>
     </div>
+    <hr>
+</div>
 
-    <hr class="featurette-divider">
 
-    <!-- contacts Section -->
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-12 col-lg-8 col-xl-6">
-                <div class="card">
-                    <div class="card-header"></div>
-                    <div class="card-body pt-1">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <i class="bi bi-clock mb-1 normal-icon"></i>
-                            {% include "opening_hours.html" %}
 
-                            <i class="bi bi-pin-map mb-1 normal-icon"></i>
-                            <table class="table table-bordered mb-2">
-                                <tbody>
-                                <tr>
-                                    <td class="address text-center">{{ translations.contacts.location.address }}</td>
-                                </tr>
-                                </tbody>
-                            </table>
+<div class="container mt-5" id="gallery_loose">
+    <h2 class="featurette-heading text-body-secondary-custom text-center mb-4">
+        {{ translations.gallery.title }}
+    </h2>
+    <!-- Gallery -->
+    <div class="row d-flex justify-content-center">
+        {% for i in range(1, 7) %}
+        <div class="col-12 col-sm-11 col-xl-6 col-xxl-4 mb-4 mb-lg-0 d-flex justify-content-center">
+            {{ gallery_element(
+            base_filename=i|string,
+            alt_text=translations.gallery.alt_text,
+            ) }}
+        </div>
+        {% endfor %}
+    </div>
+    <hr>
+</div>
 
-                            <i class="bi bi-person-check-fill mb-1 normal-icon"></i>
-                            <table class="table table-bordered mb-2">
-                                <tbody>
-                                <tr>
-                                    <td class="address text-center">{{ translations.contacts.ageRestriction }}</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+<!-- contacts Section -->
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-12 col-lg-8 col-xl-6">
+            <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body pt-1">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-clock mb-1 normal-icon"></i>
+                        {% include "opening_hours.html" %}
+
+                        <i class="bi bi-pin-map mb-1 normal-icon"></i>
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            <tr>
+                                <td class="address text-center">{{ translations.contacts.location.address }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <i class="bi bi-person-check-fill mb-1 normal-icon"></i>
+                        <table class="table table-bordered mb-2">
+                            <tbody>
+                            <tr>
+                                <td class="address text-center">{{ translations.contacts.ageRestriction }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 {% endblock %}
 
 {% block extra_scripts %}

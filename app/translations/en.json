@@ -106,7 +106,7 @@
       "map_button_text": "Open with mapy.cz"
     },
     "entrance_image": {
-      "alt": "Main entrance"
+      "alt_text": "Main entrance"
     },
     "opening_hours": {
       "heading": "Opening Hours"
@@ -120,13 +120,6 @@
       "heading": "Additional info"
     },
     "operator": "Operator"
-  },
-  "gallery": {
-    "title": "Gallery",
-    "alt_text": "TerMix club gallery picture",
-    "more_pictures": "More pictures",
-    "fb_albums": "Albums",
-    "ig_follow": "Follow us"
   },
   "drink_menu": {
     "title": "Drink Menu",
@@ -920,6 +913,11 @@
         ]
       }
     ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "alt_text": "Garage club gallery picture",
+    "more_pictures": "More pictures"
   },
   "navbar": {
     "aria_label": "Show navigation"

@@ -61,8 +61,11 @@
         "aria-label": "Silvestrovská párty, 31. 12. 2023"
       }
     ],
-    "aria-label-card":"Klikněte pro zobrazení informací",
-    "fb_button_text": ["Sledujte nás", "ať vám nic neunikne."]
+    "aria-label-card": "Klikněte pro zobrazení informací",
+    "fb_button_text": [
+      "Sledujte nás",
+      "ať vám nic neunikne."
+    ]
   },
   "opening_hours": [
     {
@@ -104,7 +107,7 @@
       "map_button_text": "Otevřít mapy.cz"
     },
     "entrance_image": {
-      "alt": "Hlavní vchod"
+      "alt_text": "Hlavní vchod"
     },
     "opening_hours": {
       "heading": "Otevírací doba"
@@ -118,13 +121,6 @@
       "heading": "Další informace"
     },
     "operator": "Provozovatel"
-  },
-  "gallery": {
-    "title": "Galerie",
-    "alt_text": "TerMix club obrázek galerie",
-    "more_pictures": "Další obrázky",
-    "fb_albums": "Alba",
-    "ig_follow": "Sledujte nás"
   },
   "drink_menu": {
     "title": "Nápojový lístek",
@@ -918,6 +914,11 @@
         ]
       }
     ]
+  },
+  "gallery": {
+    "title": "Galerie",
+    "alt_text": "Garage club obrázek galerie",
+    "more_pictures": "Další obrázky"
   },
   "navbar": {
     "aria_label": "Zobrazit navigaci"

@@ -74,6 +74,17 @@
     font-size: 2rem;
 }
 
+/* Default image styles */
+.gallery-picture {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect with shadow */
+.gallery-picture:hover {
+    box-shadow: 0 0 10px var(--army-green);
+    transform: scale(1.05); /* Slightly zoom in */
+}
+
 .card{
     font-family: "Raleway", sans-serif;
 }

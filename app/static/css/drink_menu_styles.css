@@ -1,3 +1,7 @@
+h2{
+    font-size: clamp(3rem, 5vw + 1rem, 4rem);
+}
+
 .card-header-dark{
     position: relative;
     height: 2.6rem;
