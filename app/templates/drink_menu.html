@@ -6,7 +6,12 @@
 {% endblock %}
 
 {% block content %}
-<img src="{{ url_for('static', filename='assets/img/wine.jpg') }}" class="d-block w-100 poster-img"
+<img src="{{ url_for('static', filename='assets/img/shots.avif') }}"
+     class="d-block w-100 poster-img d-none d-sm-block"
+     alt="{{ translations.drink_menu.altText }}">
+
+<img src="{{ url_for('static', filename='assets/img/shots-high.avif') }}"
+     class="d-block w-100 poster-img d-sm-none"
      alt="{{ translations.drink_menu.altText }}">
 
 <!-- main menu -->
@@ -87,7 +92,7 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
         <a href="{{ url_for('static', filename='assets/drink_menu.pdf') }}" target="_blank"
-           class="text-center btn btn-primary-purple" id="pdf-logo-large">
+           class="text-center btn btn-primary-yellow" id="pdf-logo-large">
             {{ translations.drink_menu.download }} <i class="bi bi-filetype-pdf"></i>
         </a>
     </div>
