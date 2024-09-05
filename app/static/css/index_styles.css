@@ -11,16 +11,16 @@
     object-position: center; /* Ensures the center of the image is always visible */
 }
 
-#title-logo-png{
+.title-logo-png{
     width: 70%;
 }
 @media (max-width: 992px) {
-    #title-logo-png{
+    .title-logo-png{
         width: 80%;
     }
 }
 @media (max-width: 768px) {
-    #title-logo-png{
+    .title-logo-png{
         width: 90%;
     }
 }

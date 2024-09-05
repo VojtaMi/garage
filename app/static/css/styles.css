@@ -72,6 +72,10 @@ h1 {
     background-color: var(--army-yellow); /* Text color */
 }
 
+.btn-primary-yellow:hover{
+    background-color: var(--brown-yellow); /* Text color */
+}
+
 .btn-outline-green {
     font-size: 1.4rem;
     font-family: "Bebas Neue", sans-serif;

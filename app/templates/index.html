@@ -13,7 +13,8 @@
     <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="d-block w-100 poster-img"
          alt="{{ poster.altText }}">
     <div class="poster-caption">
-        <img id="title-logo-png" src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}">
+        <img class="title-logo-png d-sm-none" src="{{ url_for('static', filename='assets/logos/garage_poster_logo_2.png') }}">
+        <img class="title-logo-png d-none d-sm-block" src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}">
     </div>
 </div>
 
@@ -39,20 +40,20 @@
         </div>
 
     </div>
-    <hr class="featurette-divider">
+    <hr class="mt-5 mb-5">
     {% endfor %}
 
     <!-- buttons -->
-    <div class="row mb-3">
-        <div class="col-4 d-flex text-center justify-content-center">
+    <div class="row mb-3 d-flex justify-content-center mt-0">
+        <div class="col-12 col-sm-4 text-center mt-3">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('events', lang=lang) }}">
                 {{ translations.events.title }}</a>
         </div>
-        <div class="col-4 d-flex text-center justify-content-center">
+        <div class="col-12 col-sm-4 text-center mt-3">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('drink_menu', lang=lang) }}">
                 {{ translations.drink_menu.title }}</a>
         </div>
-        <div class="col-4 d-flex text-center justify-content-center">
+        <div class="col-12 col-sm-4 text-center mt-3">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('contacts', lang=lang) }}">
                 {{ translations.contacts.title }}</a>
         </div>
