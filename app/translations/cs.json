@@ -9,7 +9,7 @@
       {
         "heading": [
           "Gay cruising bar",
-          "v centru Prahy."
+          "v centru Prahy"
         ],
         "description": [
           "Diskrétní prostředí",
@@ -20,6 +20,20 @@
           "altText": "houpačka BDSM",
           "src": "assets/img/swing.avif",
           "src_wide": "assets/img/swing-wide.avif"
+        }
+      },
+      {
+        "heading": [
+          "Akce",
+          "s nábojem"
+        ],
+        "description": [
+          "Tématické párty během roku",
+          "Možnost privátních večírků"
+        ],
+        "image": {
+          "altText": "muži s maskami na baru",
+          "src": "assets/img/motorbiker.avif"
         }
       }
     ]

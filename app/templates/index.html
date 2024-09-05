@@ -6,6 +6,37 @@
 {% endblock %}
 
 {% block content %}
+
+{% macro header_logo() %}
+<img class="title-logo-png d-sm-none"
+     src="{{ url_for('static', filename='assets/logos/garage_poster_logo_2.png') }}"
+     alt="Club Garage">
+<img class="title-logo-png d-none d-sm-block"
+     src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}"
+     alt="Club Garage">
+{% endmacro %}
+
+{% macro featurette_img(featurette) %}
+<div class="col-12 col-md-7">
+    <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
+         class="img-fluid mx-auto">
+</div>
+{% endmacro %}
+
+{% macro featurette_content(featurette) %}
+<div class="col-10 col-md-5">
+    <h2 class="featurette-heading fw-normal lh-1">
+        {{ featurette.heading[0] }}
+        <span class="text-body-secondary-custom">{{ featurette.heading[1] }}</span>
+    </h2>
+    {% for description in featurette.description %}
+    <p class="lead">
+        {{ description }}
+    </p>
+    {% endfor %}
+</div>
+{% endmacro %}
+
 <!-- Poster Image -->
 <div id="poster" class="mb-5">
     {% set poster = translations.home.poster %}
@@ -13,8 +44,7 @@
     <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="d-block w-100 poster-img"
          alt="{{ poster.altText }}">
     <div class="poster-caption">
-        <img class="title-logo-png d-sm-none" src="{{ url_for('static', filename='assets/logos/garage_poster_logo_2.png') }}">
-        <img class="title-logo-png d-none d-sm-block" src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}">
+        {{ header_logo() }}
     </div>
 </div>
 
@@ -22,44 +52,46 @@
     <!-- Featurette Section -->
     <hr>
     {% for featurette in translations.home.featurettes %}
-    <div class="row">
-        <h2 class="featurette-heading fw-normal lh-1">
-            {{ featurette.heading[0] }}
-            <span class="text-body-secondary-custom">{{ featurette.heading[1] }}</span>
-        </h2>
-        <div class="col-10 col-md-5">
-            {% for description in featurette.description %}
-            <p class="lead">
-                {{ description }}
-            </p>
-            {% endfor %}
-        </div>
-        <div class="col-12 col-md-7">
-            <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
-                 class="img-fluid mx-auto">
-        </div>
 
+    <!-- Mobile view: Display image and content in a single column -->
+    <div class="row d-md-none">
+        {{ featurette_content(featurette) }}
+        {{ featurette_img(featurette) }}
     </div>
-    <hr class="mt-5 mb-5">
-    {% endfor %}
+
+    <!-- Desktop view: Alternate image and content based on index -->
+    <div class="row d-none d-md-flex">
+        {% if loop.index is divisibleby 2 %}
+            {{ featurette_img(featurette) }}
+            {{ featurette_content(featurette) }}
+        {% else %}
+            {{ featurette_content(featurette) }}
+            {{ featurette_img(featurette) }}
+        {% endif %}
+    </div>
+
+    <hr class="featurette-divider">
+
+{% endfor %}
+
 
     <!-- buttons -->
     <div class="row mb-3 d-flex justify-content-center mt-0">
-        <div class="col-12 col-sm-4 text-center mt-3">
+        <div class="col-12 col-sm-4 text-center mb-3">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('events', lang=lang) }}">
                 {{ translations.events.title }}</a>
         </div>
-        <div class="col-12 col-sm-4 text-center mt-3">
+        <div class="col-12 col-sm-4 text-center mb-3">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('drink_menu', lang=lang) }}">
                 {{ translations.drink_menu.title }}</a>
         </div>
-        <div class="col-12 col-sm-4 text-center mt-3">
+        <div class="col-12 col-sm-4 text-center mb-3">
             <a class="btn btn-primary-yellow btn-home-capital" href="{{ url_for('contacts', lang=lang) }}">
                 {{ translations.contacts.title }}</a>
         </div>
     </div>
 
-   <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
     <!-- contacts Section -->
     <div class="container">

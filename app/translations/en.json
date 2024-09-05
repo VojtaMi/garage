@@ -18,8 +18,21 @@
         ],
         "image": {
           "altText": "swing BDSM",
-          "src": "assets/img/swing.avif",
-          "src_wide": "assets/img/swing-wide.avif"
+          "src": "assets/img/swing.avif"
+        }
+      },
+      {
+        "heading": [
+          "Events",
+          "with energy"
+        ],
+        "description": [
+          "Themed parties throughout the year",
+          "Private party options"
+        ],
+        "image": {
+          "altText": "men with masks at the bar",
+          "src": "assets/img/motorbiker.avif"
         }
       }
     ]
@@ -911,7 +924,7 @@
   "navbar": {
     "aria_label": "Show navigation"
   },
-   "age_verification": {
+  "age_verification": {
     "title": "Adult business",
     "disclaimer": "Club Garage is only available to adult men. Please confirm your eligibility to enter.",
     "approve": "I am 18 or older",
