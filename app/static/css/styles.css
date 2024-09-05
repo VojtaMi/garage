@@ -79,7 +79,8 @@ h1{
     background-color: var(--army-yellow); /* Text color */
 }
 
-.btn-primary-yellow:hover{
+.btn-primary-yellow:hover,
+.btn-primary-yellow:focus{
     background-color: var(--brown-yellow); /* Text color */
 }
 
@@ -87,7 +88,8 @@ h1{
     background-color: var(--army-green); /* Text color */
 }
 
-.btn-primary-green:hover{
+.btn-primary-green:hover,
+.btn-primary-green:focus{
     background-color: var(--army-green-dark); /* Text color */
 }
 
@@ -99,7 +101,8 @@ h1{
     background-color: transparent; /* No background */
 }
 
-.btn-outline-green:hover {
+.btn-outline-green:hover,
+.btn-outline-green:focus{
     background-color: var(--brown-yellow); /* Background color on hover */
     color: white; /* Text color on hover */
 }
@@ -110,7 +113,8 @@ h1{
     background-color: transparent; /* No background */
 }
 
-.btn-outline-yellow:hover {
+.btn-outline-yellow:hover,
+.btn-outline-yellow:focus{
     background-color: var(--brown-yellow); /* Background color on hover */
     color: white; /* Text color on hover */
 }
