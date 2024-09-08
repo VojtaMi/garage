@@ -89,6 +89,12 @@
     font-family: "Raleway", sans-serif;
 }
 
+.img-fluid{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 @media (max-width: 991px) {
   .lead{
@@ -104,11 +110,7 @@
     .responsive-br {
         display: inline;
     }
-    .img-fluid{
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-    }
+
     .lead{
      padding-top: 0;
     }
@@ -119,19 +121,9 @@
     .poster-caption{
         width: 98%;
     }
-    .poster-caption h1 {
-    font-weight: bold;
-}
  }
 @media (max-width: 576px) {
   .featurette-divider {
   margin: 2rem; /* Space out the Bootstrap <hr> more */
   }
-}
-@media (max-width: 400px) {
-    .img-fluid{
-        height: 100%;
-        width: auto;
-        object-fit: cover;
-    }
 }
