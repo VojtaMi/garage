@@ -73,24 +73,32 @@
   },
   "opening_hours": [
     {
+      "day": "Pondělí",
+      "hours": "20:00 - 4:00"
+    },
+    {
+      "day": "Úterý",
+      "hours": "20:00 - 4:00"
+    },
+    {
       "day": "Středa",
-      "hours": "20:00 - 6:30"
+      "hours": "20:00 - 4:00"
     },
     {
       "day": "Čtvrtek",
-      "hours": "20:00 - 6:30"
+      "hours": "20:00 - 4:00"
     },
     {
       "day": "Pátek",
-      "hours": "20:00 - 6:30"
+      "hours": "21:00 - 7:00"
     },
     {
       "day": "Sobota",
-      "hours": "20:00 - 6:30"
+      "hours": "21:00 - 7:00"
     },
     {
       "day": "Neděle",
-      "hours": "20:00 - 6:30"
+      "hours": "20:00 - 4:00"
     }
   ],
   "contacts": {

@@ -72,24 +72,32 @@
   },
   "opening_hours": [
     {
+      "day": "Monday",
+      "hours": "8:00 PM - 4:00 AM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8:00 PM - 4:00 AM"
+    },
+    {
       "day": "Wednesday",
-      "hours": "8:00 PM - 6:30 AM"
+      "hours": "8:00 PM - 4:00 AM"
     },
     {
       "day": "Thursday",
-      "hours": "8:00 PM - 6:30 AM"
+      "hours": "8:00 PM - 4:00 AM"
     },
     {
       "day": "Friday",
-      "hours": "8:00 PM - 6:30 AM"
+      "hours": "9:00 PM - 7:00 AM"
     },
     {
       "day": "Saturday",
-      "hours": "8:00 PM - 6:30 AM"
+      "hours": "9:00 PM - 7:00 AM"
     },
     {
       "day": "Sunday",
-      "hours": "8:00 PM - 6:30 AM"
+      "hours": "8:00 PM - 4:00 AM"
     }
   ],
   "contacts": {
@@ -410,207 +418,206 @@
         ]
       },
       {
-  "name": "Spirits",
-  "subsections": [
-    {
-      "name": "Whisky, Bourbon",
-      "products": [
-        {
-          "name": "Jim Beam",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Four Roses",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Jack Daniel’s",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        },
-        {
-          "name": "Jack Daniel’s Honey",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Whisky",
-      "products": [
-        {
-          "name": "Johnnie Walker Red Label",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Ballantine’s",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Jameson",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Tullamore Dew",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Gin",
-      "products": [
-        {
-          "name": "SAVOY Dry Gin",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Bombay Sapphire",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Tequila",
-      "products": [
-        {
-          "name": "Sierra Silver",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        },
-        {
-          "name": "Sierra Reposado",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Vodka",
-      "products": [
-        {
-          "name": "Mary Jane",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Tom of Finland",
-          "measure": "0.04 l",
-          "price": "110",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Rum",
-      "products": [
-        {
-          "name": "AREHUCAS Blanco, Oro",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Bacardi Spiced",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Legendario - Elixir de Cuba",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "Bacardí 8 Años",
-          "measure": "0.04 l",
-          "price": "120",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Tatratea",
-      "products": [
-        {
-          "name": "TATRATEA Peach 42%",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "TATRATEA Original 52%",
-          "measure": "0.04 l",
-          "price": "90",
-          "info": ""
-        },
-        {
-          "name": "TATRATEA Forest Fruit 62%",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        },
-        {
-          "name": "TATRATEA Outlaw 72%",
-          "measure": "0.04 l",
-          "price": "100",
-          "info": ""
-        }
-      ]
-    },
-    {
-      "name": "Other Spirits",
-      "products": [
-        {
-          "name": "Slivovice Jelínek",
-          "measure": "0.04 l",
-          "price": "80",
-          "info": "Traditional Czech plum brandy"
-        },
-        {
-          "name": "Hruškovice Jelínek Premium",
-          "measure": "0.04 l",
-          "price": "80",
-          "info": "Traditional Czech pear brandy"
-        },
-        {
-          "name": "Absinth Bestie 60%",
-          "measure": "0.04 l",
-          "price": "80",
-          "info": "High-alcohol herbal spirit"
-        },
-        {
-          "name": "Tuzemák Bartida",
-          "measure": "0.04 l",
-          "price": "70",
-          "info": "Czech rum substitute"
-        }
-      ]
-    }
-  ]
-}
-
+        "name": "Spirits",
+        "subsections": [
+          {
+            "name": "Whisky, Bourbon",
+            "products": [
+              {
+                "name": "Jim Beam",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Four Roses",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Jack Daniel’s",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              },
+              {
+                "name": "Jack Daniel’s Honey",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Whisky",
+            "products": [
+              {
+                "name": "Johnnie Walker Red Label",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Ballantine’s",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Jameson",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Tullamore Dew",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Gin",
+            "products": [
+              {
+                "name": "SAVOY Dry Gin",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Bombay Sapphire",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Tequila",
+            "products": [
+              {
+                "name": "Sierra Silver",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              },
+              {
+                "name": "Sierra Reposado",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Vodka",
+            "products": [
+              {
+                "name": "Mary Jane",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Tom of Finland",
+                "measure": "0.04 l",
+                "price": "110",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Rum",
+            "products": [
+              {
+                "name": "AREHUCAS Blanco, Oro",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Bacardi Spiced",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Legendario - Elixir de Cuba",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "Bacardí 8 Años",
+                "measure": "0.04 l",
+                "price": "120",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Tatratea",
+            "products": [
+              {
+                "name": "TATRATEA Peach 42%",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "TATRATEA Original 52%",
+                "measure": "0.04 l",
+                "price": "90",
+                "info": ""
+              },
+              {
+                "name": "TATRATEA Forest Fruit 62%",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              },
+              {
+                "name": "TATRATEA Outlaw 72%",
+                "measure": "0.04 l",
+                "price": "100",
+                "info": ""
+              }
+            ]
+          },
+          {
+            "name": "Other Spirits",
+            "products": [
+              {
+                "name": "Slivovice Jelínek",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": "Traditional Czech plum brandy"
+              },
+              {
+                "name": "Hruškovice Jelínek Premium",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": "Traditional Czech pear brandy"
+              },
+              {
+                "name": "Absinth Bestie 60%",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": "High-alcohol herbal spirit"
+              },
+              {
+                "name": "Tuzemák Bartida",
+                "measure": "0.04 l",
+                "price": "70",
+                "info": "Czech rum substitute"
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "gallery": {
