@@ -123,12 +123,12 @@
   },
   "drink_menu": {
     "title": "Drink Menu",
-    "altText": "An assortment of wine bottles on a wooden table",
+    "altText": "Visitors of the Garage club are drinking a shot",
     "download": "Download",
     "disclaimers": [
       "List of allergens with the bar staff.",
       "All drinks are served with ice.",
-      "Valid as of May 1, 2022.",
+      "Valid as of October 1, 2023.",
       "Prices and availability are subject to change. <br> Please check with our staff for the most current information."
     ],
     "sections": [
@@ -148,582 +148,117 @@
                 "name": "Martini",
                 "measure": "0.1 l",
                 "price": "80",
-                "info": "Dry/Bianco/Fiero"
-              },
-              {
-                "name": "Aperol",
-                "measure": "0.04 l",
-                "price": "60",
                 "info": ""
               }
             ]
           },
           {
-            "name": "Bourbon",
+            "name": "Sparkling Wines",
             "products": [
               {
-                "name": "Jim Beam White",
-                "measure": "0.04 l",
-                "price": "85",
+                "name": "Bohemia Sekt demi sec, brut",
+                "measure": "0.75 l",
+                "price": "330",
                 "info": ""
               },
               {
-                "name": "Four Roses",
-                "measure": "0.04 l",
-                "price": "85",
-                "info": ""
-              },
-              {
-                "name": "Jack Daniel's",
-                "measure": "0.04 l",
-                "price": "100",
-                "info": "Original/Fire/Honey"
-              }
-            ]
-          },
-          {
-            "name": "Whisky",
-            "products": [
-              {
-                "name": "Johny Walker Red Label",
-                "measure": "0.04 l",
-                "price": "85",
-                "info": ""
-              },
-              {
-                "name": "Ballantine's",
-                "measure": "0.04 l",
-                "price": "85",
-                "info": ""
-              },
-              {
-                "name": "Tullamore Dew",
-                "measure": "0.04 l",
-                "price": "85",
-                "info": ""
-              },
-              {
-                "name": "Jameson",
-                "measure": "0.04 l",
-                "price": "85",
-                "info": ""
-              },
-              {
-                "name": "Chivas Regal 12 YO",
-                "measure": "0.04 l",
-                "price": "140",
+                "name": "Bohemia Sekt demi sec, brut",
+                "measure": "0.375 l",
+                "price": "180",
                 "info": ""
               }
             ]
           },
           {
-            "name": "Gin",
-            "products": [
-              {
-                "name": "SAVOY Dry Gin",
-                "measure": "0.04 l",
-                "price": "75",
-                "info": ""
-              },
-              {
-                "name": "RIVES Pink",
-                "measure": "0.04 l",
-                "price": "75",
-                "info": ""
-              },
-              {
-                "name": "Bombay Sapphire",
-                "measure": "0.04 l",
-                "price": "90",
-                "info": ""
-              },
-              {
-                "name": "Botega Bacur Gin",
-                "measure": "0.04 l",
-                "price": "100",
-                "info": ""
-              },
-              {
-                "name": "Star of Bombay 47,5%",
-                "measure": "0.04 l",
-                "price": "100",
-                "info": ""
-              }
-            ]
-          },
-          {
-            "name": "Vodka",
-            "products": [
-              {
-                "name": "MARY JANE",
-                "measure": "0.04 l",
-                "price": "75",
-                "info": ""
-              },
-              {
-                "name": "FLIRT vodka",
-                "measure": "0.04 l",
-                "price": "75",
-                "info": "As available"
-              },
-              {
-                "name": "Grey goose premium",
-                "measure": "0.04 l",
-                "price": "120",
-                "info": ""
-              },
-              {
-                "name": "TOM of Finland",
-                "measure": "0.04 l",
-                "price": "120",
-                "info": "organic"
-              }
-            ]
-          },
-          {
-            "name": "Rum",
-            "products": [
-              {
-                "name": "Arehucas",
-                "measure": "0.04 l",
-                "price": "75",
-                "info": "Blanco/Oro"
-              },
-              {
-                "name": "Bacardi Spiced",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Ypióca Prata",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Malibu",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "El Comandante Overproof 80%",
-                "measure": "0.04 l",
-                "price": "95",
-                "info": ""
-              },
-              {
-                "name": "Legendario Elixir de Cuba",
-                "measure": "0.04 l",
-                "price": "95",
-                "info": ""
-              },
-              {
-                "name": "Zacapa Centenario 23YO",
-                "measure": "0.04 l",
-                "price": "160",
-                "info": ""
-              }
-            ]
-          },
-          {
-            "name": "Tequila",
-            "products": [
-              {
-                "name": "Sierra silver",
-                "measure": "0.04 l",
-                "price": "95",
-                "info": ""
-              },
-              {
-                "name": "Sierra reposado",
-                "measure": "0.04 l",
-                "price": "95",
-                "info": ""
-              },
-              {
-                "name": "Sierra Antiquo Plata",
-                "measure": "0.04 l",
-                "price": "110",
-                "info": ""
-              },
-              {
-                "name": "Sierra Antiquo aňejo",
-                "measure": "0.04 l",
-                "price": "110",
-                "info": ""
-              }
-            ]
-          },
-          {
-            "name": "Liquors",
+            "name": "Liqueurs",
             "products": [
               {
                 "name": "Jägermeister",
                 "measure": "0.04 l",
-                "price": "80",
-                "info": ""
+                "price": "90",
+                "info": "Herbal liqueur"
               },
               {
                 "name": "Baileys",
                 "measure": "0.04 l",
                 "price": "80",
-                "info": ""
+                "info": "Irish cream liqueur"
               },
               {
-                "name": "Kahlua",
+                "name": "Fernet",
                 "measure": "0.04 l",
                 "price": "80",
-                "info": ""
+                "info": "Bitter herbal liqueur"
               },
               {
-                "name": "Sambuca Antica",
+                "name": "Fernet Stock Citrus",
                 "measure": "0.04 l",
                 "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Cointreau",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Ferner Stock",
-                "measure": "0.04 l",
-                "price": "70",
-                "info": "Stock/Citrus"
+                "info": "Citrus flavored Fernet"
               },
               {
                 "name": "Karlovarská Becherovka",
                 "measure": "0.04 l",
-                "price": "70",
-                "info": "Original/Lemond"
+                "price": "80",
+                "info": "Czech herbal bitters"
+              },
+              {
+                "name": "Becherovka Lemond",
+                "measure": "0.04 l",
+                "price": "80",
+                "info": "Lemon-flavored Becherovka"
               },
               {
                 "name": "Bartida Zelená",
                 "measure": "0.04 l",
                 "price": "70",
-                "info": ""
-              },
-              {
-                "name": "Koskenkorva Peach",
-                "measure": "0.04 l",
-                "price": "70",
-                "info": ""
-              },
-              {
-                "name": "Trojka Pink",
-                "measure": "0.04 l",
-                "price": "60",
-                "info": ""
+                "info": "Green herbal liqueur"
               }
             ]
           },
           {
-            "name": "Other spirits",
+            "name": "Beer",
             "products": [
               {
-                "name": "Plum brandy R.Jelínek 3YO",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Pear brandy Wiliams R. J.",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Absinth",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Tuzemák Bartida",
-                "measure": "0.04 l",
-                "price": "70",
-                "info": "Potato rum"
-              },
-              {
-                "name": "TATRATEA 22%, 32%, 42%",
-                "measure": "0.04 l",
-                "price": "75",
-                "info": ""
-              },
-              {
-                "name": "TATRATEA 52%, 62%, 72%",
-                "measure": "0.04 l",
-                "price": "85",
-                "info": ""
-              },
-              {
-                "name": "Metaxa 5*",
-                "measure": "0.04 l",
-                "price": "80",
-                "info": ""
-              },
-              {
-                "name": "Smirnoff Ice",
-                "measure": "0.275 l",
-                "price": "105",
-                "info": ""
-              }
-            ]
-          },
-          {
-            "name": "Soft drinks",
-            "products": [
-              {
-                "name": "PEPSI-COLA",
-                "measure": "0.1 l",
-                "price": "22",
-                "info": "postmix"
-              },
-              {
-                "name": "Tonic, 7UP, soda",
-                "measure": "0.1 l",
-                "price": "22",
-                "info": "postmix"
-              },
-              {
-                "name": "Mirinda",
-                "measure": "0.33 l",
-                "price": "75",
-                "info": ""
-              },
-              {
-                "name": "PEPSI Sugar free",
-                "measure": "0.33 l",
-                "price": "75",
-                "info": ""
-              },
-              {
-                "name": "Ice tea",
-                "measure": "0.33 l",
-                "price": "75",
-                "info": "As available"
-              },
-              {
-                "name": "Juice",
-                "measure": "0.1 l",
-                "price": "22",
-                "info": "As available"
-              },
-              {
-                "name": "Juice TOMA",
-                "measure": "0.25 l",
-                "price": "55",
-                "info": "glass (As available)"
-              },
-              {
-                "name": "AQUILA – still water",
-                "measure": "0.33 l",
-                "price": "45",
-                "info": ""
-              },
-              {
-                "name": "MATTONI  – slightly sparkling mineral water",
-                "measure": "0.33 l",
-                "price": "45",
-                "info": ""
-              },
-              {
-                "name": "Evian",
-                "measure": "0.33 l",
-                "price": "60",
-                "info": ""
-              },
-              {
-                "name": "Nespresso, milk",
-                "measure": "bal",
-                "price": "45",
-                "info": ""
-              },
-              {
-                "name": "RED BULL Energy drink",
-                "measure": "0.25 l",
-                "price": "80",
-                "info": "Original/Sugarfree/Tropical edition"
-              }
-            ]
-          },
-          {
-            "name": "Additional sales",
-            "products": [
-              {
-                "name": "Crisps  – As available",
-                "measure": "bal.",
-                "price": "45",
-                "info": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Wine",
-        "subsections": [
-          {
-            "name": "Champagne",
-            "products": [
-              {
-                "name": "Moët & Chandon Brut Impérial",
-                "measure": "0.375 l",
-                "price": "995",
-                "info": ""
-              },
-              {
-                "name": "Moët & Chandon Brut Impérial",
-                "measure": "0.75 l",
-                "price": "1990",
-                "info": ""
-              },
-              {
-                "name": "Moët & Chandon Ice Impérial",
-                "measure": "0.75 l",
-                "price": "2190",
-                "info": ""
-              },
-              {
-                "name": "Moët & Chandon Rosé",
-                "measure": "0.75 l",
-                "price": "2190",
-                "info": ""
-              },
-              {
-                "name": "Moët & Chandon N.I.R",
-                "measure": "0.75 l",
-                "price": "2490",
-                "info": ""
-              }
-            ]
-          },
-          {
-            "name": "Sparkling wine",
-            "products": [
-              {
-                "name": "Martini Prosecco",
-                "measure": "0.15 l",
-                "price": "90",
-                "info": ""
-              },
-              {
-                "name": "Martini Prosecco",
-                "measure": "0.75 l",
-                "price": "450",
-                "info": ""
-              },
-              {
-                "name": "Bohemia Sekt",
-                "measure": "0.75 l",
-                "price": "360",
-                "info": "demi sec, brut"
-              },
-              {
-                "name": "Bohemia Sekt",
-                "measure": "0.375 l",
-                "price": "190",
-                "info": "demi sec, brut"
-              }
-            ]
-          },
-          {
-            "name": "House wine",
-            "products": [
-              {
-                "name": "As available",
-                "measure": "0.2 l",
-                "price": "60",
-                "info": ""
-              },
-              {
-                "name": "Spritzer 2:1",
-                "measure": "0.3 l",
-                "price": "80",
-                "info": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Beer",
-        "subsections": [
-          {
-            "name": "Draft",
-            "products": [
-              {
-                "name": "Staropramen 10°",
+                "name": "Staropramen 10° (draft)",
                 "measure": "0.5 l",
                 "price": "70",
                 "info": ""
               },
               {
-                "name": "Carling Cider",
-                "measure": "0.3 l",
-                "price": "55",
+                "name": "Staropramen 12° Lager (can)",
+                "measure": "0.5 l",
+                "price": "80",
                 "info": ""
-              }
-            ]
-          },
-          {
-            "name": "Bottle",
-            "products": [
+              },
               {
-                "name": "Stella Artois ležák 12°",
-                "measure": "0.33 l",
+                "name": "Staropramen non-alcoholic (can)",
+                "measure": "0.5 l",
                 "price": "65",
                 "info": ""
               },
               {
-                "name": "Stella Artois nealko",
+                "name": "Frisco (various flavors)",
                 "measure": "0.33 l",
-                "price": "55",
-                "info": ""
+                "price": "75",
+                "info": "Flavored cider drink"
               },
               {
                 "name": "Corona",
                 "measure": "0.33 l",
-                "price": "105",
-                "info": ""
-              },
-              {
-                "name": "Desperado",
-                "measure": "0.33 l",
-                "price": "105",
-                "info": ""
-              },
-              {
-                "name": "Frisco",
-                "measure": "0.33 l",
-                "price": "60",
-                "info": ""
+                "price": "110",
+                "info": "Mexican pale lager beer"
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Cocktails",
-        "subsections": [
+          },
           {
-            "name": "Special cocktails",
+            "name": "House Wines",
             "products": [
               {
-                "name": "MARTINI FIERO & TONIC",
-                "measure": "",
-                "price": "113",
+                "name": "House Wine (varieties vary)",
+                "measure": "0.2 l",
+                "price": "80",
                 "info": ""
-              },
-              {
-                "name": "AMARANCIO",
-                "measure": "",
-                "price": "150",
-                "info": "Savoy gin, Campari, Red Bull Tropical Edition"
               }
             ]
           },
@@ -731,187 +266,347 @@
             "name": "Cocktails",
             "products": [
               {
-                "name": "SPRITZ",
-                "measure": "",
-                "price": "143",
-                "info": "Art spritz aperitivo, prosecco, soda, orange"
-              },
-              {
-                "name": "PINK PARADISE",
-                "measure": "",
-                "price": "93",
-                "info": "Trojka PINK, soda, lime"
-              },
-              {
-                "name": "B 52",
-                "measure": "",
-                "price": "108",
-                "info": "Bailey´s, Kahlúa, El Commandante rum"
-              },
-              {
                 "name": "Bavorák",
                 "measure": "",
-                "price": "103",
-                "info": "Fernet Stock, tonic"
+                "price": "150",
+                "info": "Beer-based cocktail"
               },
               {
                 "name": "Beton",
                 "measure": "",
-                "price": "103",
-                "info": "Becherovka, tonic"
+                "price": "150",
+                "info": "Becherovka and tonic cocktail"
               },
               {
-                "name": "Black Russian",
+                "name": "Campiri Orange",
                 "measure": "",
-                "price": "118",
-                "info": "Vodka, Kahlúa"
-              },
-              {
-                "name": "Bloody Mary",
-                "measure": "",
-                "price": "130",
-                "info": "Vodka, tomato juice, tabasco"
-              },
-              {
-                "name": "Caipirinha",
-                "measure": "",
-                "price": "95",
-                "info": "Ypióca Prata, lime, sugar"
-              },
-              {
-                "name": "Campari Orange",
-                "measure": "",
-                "price": "98",
-                "info": ""
-              },
-              {
-                "name": "Cosmopolitan",
-                "measure": "",
-                "price": "145",
-                "info": "Vodka, Cointreau, cranberry juice, lime juice"
+                "price": "140",
+                "info": "Campari and orange juice"
               },
               {
                 "name": "Cuba libre",
                 "measure": "",
-                "price": "108",
-                "info": "Arehucas Rum, pepsi-cola, lime juice"
+                "price": "160",
+                "info": "Rum, cola, and lime cocktail"
               },
               {
-                "name": "Gin Tonic",
+                "name": "Gin tonic",
                 "measure": "",
-                "price": "108",
-                "info": ""
+                "price": "160",
+                "info": "Gin with tonic water"
               },
               {
-                "name": "Strawberry Gin Tonic",
-                "measure": "",
-                "price": "108",
-                "info": "Rives Pink gin, Tonic"
-              },
-              {
-                "name": "Long Beach Ice Tea",
-                "measure": "",
-                "price": "205",
-                "info": "Gin, Vodka, Rum, Tequila, Triple sec, lemon juice, sugar, cranberry juice"
-              },
-              {
-                "name": "Long Island Ice Tea",
-                "measure": "",
-                "price": "205",
-                "info": "Gin, Vodka, Rum, Tequila, Triple sec, lemon juice, sugar, cola"
-              },
-              {
-                "name": "Tokyo Ice Tea",
-                "measure": "",
-                "price": "205",
-                "info": "Gin, Vodka, Rum, Tequila, Melon liqueur, lemon juice, sugar, sprite"
-              },
-              {
-                "name": "Margarita",
-                "measure": "",
-                "price": "135",
-                "info": "Tequila, Cointreau, lemon juice"
-              },
-              {
-                "name": "Mojito",
+                "name": "Rock Star + Mary Vodka",
                 "measure": "",
                 "price": "170",
-                "info": "Arehucas rum, lime, mint, cane sugar, soda"
-              },
-              {
-                "name": "Red Bull + Mary Jane vodka",
-                "measure": "",
-                "price": "155",
-                "info": ""
+                "info": "Energy drink with vodka"
               },
               {
                 "name": "Screwdriver",
                 "measure": "",
-                "price": "108",
-                "info": "Mary Jane vodka, orange juice"
-              },
-              {
-                "name": "Sex on the Beach",
-                "measure": "",
-                "price": "143",
-                "info": "Vodka, Peach Tree, orange juice, grenadine"
+                "price": "160",
+                "info": "Vodka with orange juice"
               },
               {
                 "name": "Tequila Sunrise",
                 "measure": "",
-                "price": "135",
+                "price": "170",
                 "info": "Tequila, orange juice, grenadine"
+              }
+            ]
+          },
+          {
+            "name": "Non-Alcoholic Drinks",
+            "products": [
+              {
+                "name": "Mirinda",
+                "measure": "0.33 l",
+                "price": "70",
+                "info": "Orange-flavored soda"
               },
               {
-                "name": "Chupito",
-                "measure": "",
+                "name": "7 up",
+                "measure": "0.33 l",
+                "price": "70",
+                "info": "Lemon-lime soda"
+              },
+              {
+                "name": "Tonic",
+                "measure": "0.25 l",
+                "price": "70",
+                "info": "Carbonated tonic water"
+              },
+              {
+                "name": "PEPSI - COLA",
+                "measure": "0.33 l",
+                "price": "70",
+                "info": "Cola-flavored soda"
+              },
+              {
+                "name": "Juice - bottled (varies)",
+                "measure": "0.25 l",
+                "price": "70",
+                "info": ""
+              },
+              {
+                "name": "Toma - still or slightly sparkling",
+                "measure": "0.5 l",
                 "price": "60",
-                "info": "Vodka, lime juice, cocktail cherry"
+                "info": "Mineral water"
+              },
+              {
+                "name": "ROCKSTAR",
+                "measure": "0.25 l",
+                "price": "80",
+                "info": "Energy drink"
+              },
+              {
+                "name": "Espresso, milk",
+                "measure": "10g",
+                "price": "60",
+                "info": "Espresso coffee with milk"
               }
             ]
           },
           {
-            "name": "Maxi Cocktail",
+            "name": "Snacks",
             "products": [
               {
-                "name": "Cuba libre",
-                "measure": "",
-                "price": "1080",
-                "info": "0,4 l A. Blanco, 1,5 l Pepsi, Lime"
+                "name": "Small Poppers",
+                "measure": "1 pcs",
+                "price": "395",
+                "info": "Aromatherapy item"
               },
               {
-                "name": "Mojito",
-                "measure": "",
-                "price": "1455",
-                "info": "0,6 l A. Blanco, 1,5 l Soda, Lime, Mint, Sugar"
-              }
-            ]
-          },
-          {
-            "name": "Bottle Servis",
-            "products": [
+                "name": "Large Poppers",
+                "measure": "1 pcs",
+                "price": "545",
+                "info": "Aromatherapy item"
+              },
               {
-                "name": "Mary Jane vodka 0,5 l + 6x Red Bull",
-                "measure": "",
-                "price": "1418",
+                "name": "Peanuts",
+                "measure": "1 bag",
+                "price": "45",
                 "info": ""
               },
               {
-                "name": "Mary Jane vodka 0,7 l + 6x Red Bull",
-                "measure": "",
-                "price": "1793",
+                "name": "Chips (various flavors)",
+                "measure": "1 bag",
+                "price": "50",
                 "info": ""
               },
               {
-                "name": "Grey Goose 1 l + 6x Red Bull",
-                "measure": "",
-                "price": "3480",
+                "name": "Tic Tac",
+                "measure": "1 pcs",
+                "price": "40",
                 "info": ""
               }
             ]
           }
         ]
-      }
+      },
+      {
+  "name": "Spirits",
+  "subsections": [
+    {
+      "name": "Whisky, Bourbon",
+      "products": [
+        {
+          "name": "Jim Beam",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Four Roses",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Jack Daniel’s",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        },
+        {
+          "name": "Jack Daniel’s Honey",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Whisky",
+      "products": [
+        {
+          "name": "Johnnie Walker Red Label",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Ballantine’s",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Jameson",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Tullamore Dew",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Gin",
+      "products": [
+        {
+          "name": "SAVOY Dry Gin",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Bombay Sapphire",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Tequila",
+      "products": [
+        {
+          "name": "Sierra Silver",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        },
+        {
+          "name": "Sierra Reposado",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Vodka",
+      "products": [
+        {
+          "name": "Mary Jane",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Tom of Finland",
+          "measure": "0.04 l",
+          "price": "110",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Rum",
+      "products": [
+        {
+          "name": "AREHUCAS Blanco, Oro",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Bacardi Spiced",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Legendario - Elixir de Cuba",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "Bacardí 8 Años",
+          "measure": "0.04 l",
+          "price": "120",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Tatratea",
+      "products": [
+        {
+          "name": "TATRATEA Peach 42%",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "TATRATEA Original 52%",
+          "measure": "0.04 l",
+          "price": "90",
+          "info": ""
+        },
+        {
+          "name": "TATRATEA Forest Fruit 62%",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        },
+        {
+          "name": "TATRATEA Outlaw 72%",
+          "measure": "0.04 l",
+          "price": "100",
+          "info": ""
+        }
+      ]
+    },
+    {
+      "name": "Other Spirits",
+      "products": [
+        {
+          "name": "Slivovice Jelínek",
+          "measure": "0.04 l",
+          "price": "80",
+          "info": "Traditional Czech plum brandy"
+        },
+        {
+          "name": "Hruškovice Jelínek Premium",
+          "measure": "0.04 l",
+          "price": "80",
+          "info": "Traditional Czech pear brandy"
+        },
+        {
+          "name": "Absinth Bestie 60%",
+          "measure": "0.04 l",
+          "price": "80",
+          "info": "High-alcohol herbal spirit"
+        },
+        {
+          "name": "Tuzemák Bartida",
+          "measure": "0.04 l",
+          "price": "70",
+          "info": "Czech rum substitute"
+        }
+      ]
+    }
+  ]
+}
+
     ]
   },
   "gallery": {
