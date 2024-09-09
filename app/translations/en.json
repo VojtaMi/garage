@@ -35,17 +35,10 @@
           "src": "assets/img/motorbiker.avif"
         }
       }
-    ]
-  },
-  "about": {
-    "title": "About Us",
-    "quote": [
-      "We are an open bar where everyone can have fun, regardless of their background or orientation.",
-      "A friendly atmosphere and great music."
     ],
-    "fb_button_text": "Follow us fow the news",
+    "gallery_title": "Gallery",
     "other_bars_title": [
-      "Do you like TerMix?",
+      "Do you like Garage?",
       "Visit also our other clubs in Prague."
     ]
   },
@@ -619,11 +612,6 @@
         ]
       }
     ]
-  },
-  "gallery": {
-    "title": "Gallery",
-    "alt_text": "Garage club gallery picture",
-    "more_pictures": "More pictures"
   },
   "navbar": {
     "aria_label": "Show navigation"

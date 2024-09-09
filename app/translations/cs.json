@@ -36,17 +36,10 @@
           "src": "assets/img/motorbiker.avif"
         }
       }
-    ]
-  },
-  "about": {
-    "title": "O Nás",
-    "quote": [
-      "Jsme otevřený bar, kde si užije zábavu každý bez ohledu na původ, nebo orientaci.",
-      "Přátelské prostředí a skvělá muzika."
     ],
-    "fb_button_text": "Pro novinky nás sledujte",
+    "gallery_title": "Galerie",
     "other_bars_title": [
-      "Líbí se vám TerMix?",
+      "Líbí se vám Garage?",
       "Navštivte i naše další kluby v Praze."
     ]
   },
@@ -620,11 +613,6 @@
         ]
       }
     ]
-  },
-  "gallery": {
-    "title": "Galerie",
-    "alt_text": "Garage club obrázek galerie",
-    "more_pictures": "Další obrázky"
   },
   "navbar": {
     "aria_label": "Zobrazit navigaci"
