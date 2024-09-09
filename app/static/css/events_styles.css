@@ -75,6 +75,16 @@
     border-radius: 50%;           /* Makes the background circular */
 }
 
+#no-event-heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+}
+
+#no-event-message{
+    font-size: 1.3rem; /* Default size */
+    "Raleway", sans-serif;
+}
+
 @media (min-width: 1200px) {
     /* Default image styles */
     .gallery-picture {
