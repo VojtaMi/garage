@@ -60,10 +60,14 @@
         "aria-label": "New Year Party, December 31 2023"
       }
     ],
-    "aria-label-card": "Click to see details",
+    "aria_label_card": "Click to see details",
     "fb_button_text": [
       "Follow us",
       "so you don't miss anything."
+    ],
+    "no_events_message": [
+      "No upcoming events",
+      "But you can still have a great time during our usual schedule."
     ]
   },
   "opening_hours": [

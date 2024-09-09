@@ -61,10 +61,14 @@
         "aria-label": "Silvestrovská párty, 31. 12. 2023"
       }
     ],
-    "aria-label-card": "Klikněte pro zobrazení informací",
+    "aria_label_card": "Klikněte pro zobrazení informací",
     "fb_button_text": [
       "Sledujte nás",
       "ať vám nic neunikne."
+    ],
+    "no_events_message": [
+      "Žádné blízké akce",
+      "Ale i během běžného provozu si můžete užít plno zábavy."
     ]
   },
   "opening_hours": [
