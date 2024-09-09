@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Age verification popup
- document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     if (!sessionStorage.getItem("ageConfirmed")) {
       var ageModal = new bootstrap.Modal(document.getElementById('ageVerificationModal'), {
         backdrop: 'static', // Prevent closing by clicking outside
@@ -52,4 +52,3 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = "https://www.google.com";
     });
   });
-

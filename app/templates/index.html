@@ -70,7 +70,7 @@
 <div id="poster" class="mb-5">
     {% set poster = translations.home.poster %}
     <h1 class="visually-hidden">{{ poster.title }}</h1> <!-- Hidden h1 for SEO and accessibility -->
-    <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="d-block w-100 poster-img"
+    <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="poster-img"
          alt="{{ poster.altText }}">
     <div class="poster-caption">
         {{ header_logo() }}
