@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://garage-7608.rostiapp.cz/?lang=en</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/?lang=cs</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/events?lang=en</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/contacts?lang=en</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/drink_menu?lang=en</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/events?lang=cs</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/contacts?lang=cs</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/drink_menu?lang=cs</loc>
+  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://garage-7608.rostiapp.cz/static/assets/drink_menu.pdf</loc>
+  <lastmod>2024-09-10T09:04:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>

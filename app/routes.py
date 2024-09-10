@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, Response
 from datetime import date
 
 def configure_routes(app):
@@ -53,3 +53,16 @@ def configure_routes(app):
     def events():
         lang = request.args.get('lang')
         return render_template('events.html', translations=get_translations(lang), lang=lang)
+
+    @app.route('/robots.txt')
+    def robots_txt():
+        lines = [
+            "User-agent: *",  # Applies to all user agents
+            "Sitemap: https://club-termix.cz/sitemap.xml"  # Link to your sitemap
+        ]
+        return Response("\n".join(lines), mimetype="text/plain")
+
+    @app.route('/sitemap.xml')
+    def sitemap():
+        # Redirect to the sitemap in the static folder
+        return redirect(url_for('static', filename='sitemap.xml'))
