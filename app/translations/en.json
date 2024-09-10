@@ -45,13 +45,6 @@
   "events": {
     "title": "Events",
     "event_list": [
-      {
-        "title": "New Year's eve",
-        "date": "December 31, 2023",
-        "description": "Let's come to celebrate new year in your favourite gay bar.",
-        "img_filename": "new_year_party",
-        "aria-label": "New Year Party, December 31 2023"
-      }
     ],
     "aria_label_card": "Click to see details",
     "fb_button_text": [
@@ -59,8 +52,8 @@
       "so you don't miss anything."
     ],
     "no_events_message": [
-      "No upcoming events",
-      "But you can still have a great time during our usual schedule."
+      "Our secrets",
+      "Not all events are advertised publicly. Details are known to regular visitors."
     ]
   },
   "opening_hours": [

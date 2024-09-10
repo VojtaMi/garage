@@ -8,10 +8,10 @@
 
 {% block content %}
 
-
 {% macro event_card(event) %}
 <div class="col-12 col-sm-6 col-xxl-4 mb-3 d-flex justify-content-center">
-    <div class="flip-card" tabindex="0" role="button" aria-label="{{ translations.events.aria_label_card }}" aria-live="polite">
+    <div class="flip-card" tabindex="0" role="button" aria-label="{{ translations.events.aria_label_card }}"
+         aria-live="polite">
         <div class="flip-card-inner">
             <!-- Front of the card -->
             <div class="flip-card-front">
@@ -32,19 +32,34 @@
 </div>
 {% endmacro %}
 
+{% macro title_img() %}
+<img src="{{ url_for('static', filename='assets/img/tattoo_wide.avif') }}"
+     class="d-block w-100 poster-img d-none d-sm-block"
+     alt="{{ translations.drink_menu.altText }}">
+
+<img src="{{ url_for('static', filename='assets/img/tattoo_high.avif') }}"
+     class="d-block w-100 poster-img d-sm-none"
+     alt="{{ translations.drink_menu.altText }}">
+{% endmacro %}
+
+
+{% if translations.events.event_list %}
 <div class="container">
     <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
     <div class="row d-flex justify-content-center">
-        {% if translations.events.event_list %}
-            {% for event in translations.events.event_list %}
-            {{ event_card(event) }}
-            {% endfor %}
-        {% else %}
-        <h3 class="text-center" id="no-event-heading" >{{ translations.events.no_events_message[0] }}</h3>
-        <p class="text-center" id="no-event-message">{{ translations.events.no_events_message[1] }}</p>
-        {% endif %}
+        {% for event in translations.events.event_list %}
+        {{ event_card(event) }}
+        {% endfor %}
     </div>
+</div>
 
+{% else %}
+{{ title_img() }}
+<h1 class="heading mt-3 mb-2 text-center">{{ translations.events.no_events_message[0] }}</h1>
+<p class="text-center" id="no-event-message">{{ translations.events.no_events_message[1] }}</p>
+{% endif %}
+
+<div class="container">
     <!--facebook button-->
     {% set fb_button_text = translations.events.fb_button_text %}
     <div class="row justify-content-center mt-5">

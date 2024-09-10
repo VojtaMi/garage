@@ -46,13 +46,6 @@
   "events": {
     "title": "Akce",
     "event_list": [
-      {
-        "title": "Silvestrovská Párty",
-        "description": "Přijďdte oslavit Silvestra do vašeho oblíbeného gay baru.",
-        "date": "31. 12. 2023",
-        "img_filename": "new_year_party",
-        "aria-label": "Silvestrovská párty, 31. 12. 2023"
-      }
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
     "fb_button_text": [
@@ -60,8 +53,8 @@
       "ať vám nic neunikne."
     ],
     "no_events_message": [
-      "Žádné blízké akce",
-      "Ale i během běžného provozu si můžete užít plno zábavy."
+      "Naše tajemství",
+      "Ne všechny akce inzerujeme veřejně. Detaily jsou známy pravidelným návštěvníkům."
     ]
   },
   "opening_hours": [
