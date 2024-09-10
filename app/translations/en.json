@@ -367,19 +367,19 @@
             ]
           },
           {
-            "name": "Snacks",
+            "name": "Additional sales",
             "products": [
               {
                 "name": "Small Poppers",
                 "measure": "1 pcs",
                 "price": "395",
-                "info": "Aromatherapy item"
+                "info": ""
               },
               {
                 "name": "Large Poppers",
                 "measure": "1 pcs",
                 "price": "545",
-                "info": "Aromatherapy item"
+                "info": ""
               },
               {
                 "name": "Peanuts",
