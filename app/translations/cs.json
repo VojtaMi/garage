@@ -112,9 +112,9 @@
     },
     "ageRestriction": "Vstup od 18",
     "payments": [
-      "Pouze hotovost"
+      "Hotově i kartou"
     ],
-    "cloakroom": "Šatna",
+    "cloakroom": "Šatna zdarma",
     "additional_info": {
       "heading": "Další informace"
     },

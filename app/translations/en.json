@@ -111,9 +111,9 @@
     },
     "ageRestriction": "Entry 18+",
     "payments": [
-      "Cash only"
+      "Cash & Cards"
     ],
-    "cloakroom": "Cloakroom",
+    "cloakroom": "Cloakroom (free)",
     "additional_info": {
       "heading": "Additional info"
     },
