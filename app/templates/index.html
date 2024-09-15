@@ -22,12 +22,15 @@
 {% block content %}
 
 {% macro header_logo() %}
-<img class="title-logo-png d-sm-none"
-     src="{{ url_for('static', filename='assets/logos/garage_poster_logo_2.png') }}"
-     alt="Club Garage">
-<img class="title-logo-png d-none d-sm-block"
+<picture>
+    <!-- Mobile portrait mode: Load poster_mobile.avif for screens 576px or less -->
+    <source srcset="{{ url_for('static', filename='assets/logos/garage_poster_logo_2.png') }}" media="(max-width: 576px)">
+
+    <!-- Default image for larger screens -->
+    <img class="title-logo-png"
      src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}"
      alt="Club Garage">
+</picture>
 {% endmacro %}
 
 {% macro featurette_img(featurette) %}
@@ -73,8 +76,15 @@
 <div id="poster" class="mb-5">
     {% set poster = translations.home.poster %}
     <h1 class="visually-hidden">{{ poster.title }}</h1> <!-- Hidden h1 for SEO and accessibility -->
-    <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="poster-img"
-         alt="{{ poster.altText }}">
+    <picture>
+        <!-- Mobile portrait mode: Load poster_mobile.avif for screens 576px or less -->
+        <source srcset="{{ url_for('static', filename='assets/img/poster_mobile.avif') }}" media="(max-width: 576px)">
+
+        <!-- Default image for larger screens -->
+        <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="poster-img"
+             alt="{{ poster.altText }}">
+    </picture>
+
     <div class="poster-caption">
         {{ header_logo() }}
     </div>
