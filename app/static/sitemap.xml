@@ -7,48 +7,48 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>https://club-garage-prag.cz/?lang=en</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/en/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/?lang=cs</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/cs/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/events?lang=en</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/en/events/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/contacts?lang=en</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/en/contacts/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/drink_menu?lang=en</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/en/drink_menu/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/events?lang=cs</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/cs/events/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/contacts?lang=cs</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/cs/contacts/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://club-garage-prag.cz/drink_menu?lang=cs</loc>
-  <lastmod>2024-09-10T09:30:15+00:00</lastmod>
+  <loc>https://club-garage-prag.cz/cs/drink_menu/</loc>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://club-garage-prag.cz/static/assets/drink_menu.pdf</loc>
-  <lastmod>2024-09-10T09:04:19+00:00</lastmod>
+  <lastmod>2024-09-16T15:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

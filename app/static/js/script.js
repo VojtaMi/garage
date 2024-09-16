@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
 // Function to highlight the active language link
 document.addEventListener("DOMContentLoaded", function() {
     var langLinks = document.querySelectorAll('.lang-link');
-    var currentUrlParams = new URLSearchParams(window.location.search);
-    var currentLang = currentUrlParams.get('lang');
+
+    // Extract the current language from the URL path (e.g., /cs/ or /en/)
+    var currentLang = window.location.pathname.split('/')[1]; // Get the first part of the path
 
     langLinks.forEach(function(link) {
-        var linkLang = new URLSearchParams(link.getAttribute('href').split('?')[1]).get('lang');
+        var linkLang = link.getAttribute('href').split('/')[1]; // Get the first part of the href path
         if (linkLang === currentLang) {
             link.classList.add('active');
         } else {
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 
 // Age verification popup
 document.addEventListener("DOMContentLoaded", function() {

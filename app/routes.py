@@ -7,13 +7,13 @@ def configure_routes(app):
         return app.config['TRANSLATIONS'].get(lang)
 
     def get_localized_urls():
-        current_url = request.full_path
-        if 'lang=en' in current_url:
-            cs_url = current_url.replace('lang=en', 'lang=cs')
+        current_url = request.path  # Use the URL path instead of query parameters
+        if '/en/' in current_url:
+            cs_url = current_url.replace('/en/', '/cs/')
             en_url = current_url  # Already in English
         else:
             cs_url = current_url  # Already in Czech
-            en_url = current_url.replace('lang=cs', 'lang=en')
+            en_url = current_url.replace('/cs/', '/en/')
         return cs_url, en_url
 
     @app.context_processor
@@ -25,33 +25,29 @@ def configure_routes(app):
     def inject_current_year():
         return {'current_year': date.today().year}
 
-    def redirect_browser_lang():
+    @app.route('/')
+    def home_without_lang():
         # Czech for Czech and Slovak, else English
         browser_lang = request.accept_languages.best_match(['en', 'cs', 'sk'])
         if browser_lang in ['cs', 'sk']:
             return redirect(url_for("home", lang='cs'))
         return redirect(url_for("home", lang='en'))
 
-    @app.route('/')
-    def home():
-        lang = request.args.get('lang')
-        if not lang:
-            return redirect_browser_lang()
+    @app.route('/<lang>/')
+    def home(lang):
         return render_template('index.html', translations=get_translations(lang), lang=lang)
 
-    @app.route('/contacts')
-    def contacts():
-        lang = request.args.get('lang')
+    @app.route('/<lang>/contacts')
+    def contacts(lang):
         return render_template('contacts.html', translations=get_translations(lang), lang=lang)
 
-    @app.route('/drink_menu')
-    def drink_menu():
-        lang = request.args.get('lang')
+    @app.route('/<lang>/drink_menu')
+    def drink_menu(lang):
         return render_template('drink_menu.html', translations=get_translations(lang), lang=lang)
 
-    @app.route('/events')
-    def events():
-        lang = request.args.get('lang')
+
+    @app.route('/<lang>/events')
+    def events(lang):
         return render_template('events.html', translations=get_translations(lang), lang=lang)
 
     @app.route('/robots.txt')
