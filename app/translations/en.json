@@ -46,6 +46,20 @@
   "events": {
     "title": "Events",
     "event_list": [
+      {
+        "title": "Fetish New Year Celebration",
+        "date": "31 December 2024",
+        "description": "Ring in the New Year at Club Garage with a night of unforgettable celebration. Come dressed in your favorite gear and join us for an electrifying start to 2025!",
+        "img_filename": "garage_new_year",
+        "aria_label": "Presale: 200 CZK via payment to 6643047002/5500 with VS - your name or nickname"
+      },
+      {
+        "title": "Fetish Nights",
+        "date": "2024 - 2025",
+        "description": "December 31: We Wish You a Fetish New Year, January 11: Fetish Night, January 25: Fetish Night, February 8: Fetish Night.",
+        "img_filename": "garage_program",
+        "aria_label": "Fetish Nights schedule: December 31, January 11, January 25, February 8."
+      }
     ],
     "aria_label_card": "Click to see details",
     "fb_button_text": [
