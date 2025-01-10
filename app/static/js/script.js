@@ -36,21 +36,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Age verification popup
 document.addEventListener("DOMContentLoaded", function() {
-    if (!sessionStorage.getItem("ageConfirmed")) {
-      var ageModal = new bootstrap.Modal(document.getElementById('ageVerificationModal'), {
-        backdrop: 'static', // Prevent closing by clicking outside
-        keyboard: false // Disable closing with ESC key
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isBot = /googlebot|bingbot|duckduckbot|baiduspider/.test(userAgent);
+
+  // If it's a bot, skip the modal logic
+  if (isBot) {
+      return;
+  }
+
+  // Check if the user's age confirmation is already stored
+  if (!sessionStorage.getItem("ageConfirmed")) {
+      const ageModal = new bootstrap.Modal(document.getElementById('ageVerificationModal'), {
+          backdrop: 'static', // Prevent closing by clicking outside
+          keyboard: false // Disable closing with ESC key
       });
       ageModal.show();
-    }
+  }
 
-    document.getElementById("confirm-age").addEventListener("click", function() {
+  // Confirm age and store in sessionStorage
+  document.getElementById("confirm-age").addEventListener("click", function() {
       sessionStorage.setItem("ageConfirmed", true);
-      var ageModal = bootstrap.Modal.getInstance(document.getElementById('ageVerificationModal'));
+      const ageModal = bootstrap.Modal.getInstance(document.getElementById('ageVerificationModal'));
       ageModal.hide();
-    });
-
-    document.getElementById("exit-site").addEventListener("click", function() {
-      window.location.href = "https://www.google.com";
-    });
   });
+
+  // Redirect to an external site if the user declines
+  document.getElementById("exit-site").addEventListener("click", function() {
+      window.location.href = "https://www.google.com";
+  });
+});
+
