@@ -79,33 +79,33 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark" aria-label="Navigation">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
                 {{ logo_link() }}
                 <div class="d-none d-sm-block">
                     {{ facebook_link() }}
                 </div>
                 <div class="d-none d-sm-block">
-                {{ instagram_link() }}
+                    {{ instagram_link() }}
+                </div>
             </div>
+    
+            <!-- Language Switcher and Toggler Button (Pushed to the Right) -->
+            <div class="d-flex align-items-center ms-auto">
+                <div class="navbar-nav d-flex flex-row">
+                    <a class="nav-link lang-link px-1" href="{{ cs_url }}">cs</a>
+                    <a class="nav-link lang-link px-3" href="{{ en_url }}">en</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+                    aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="{{ translations.navbar.aria_label }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
-
-        <!-- Language Switcher and Toggler Button -->
-        <div class="d-flex align-items-center">
-            <div class="navbar-nav d-flex flex-row">
-                <a class="nav-link lang-link px-1" href="{{ cs_url }}">cs</a>
-                <a class="nav-link lang-link px-3" href="{{ en_url }}">en</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
-                aria-controls="navbarsExample01" aria-expanded="false"
-                aria-label="{{ translations.navbar.aria_label }}">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
+    
         <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarsExample01">
+        <div class="collapse navbar-collapse ms-3" id="navbarsExample01">
             <ul class="navbar-nav me-auto mb-2">
                 {{ nav_link('home', translations.home.title) }}
                 {{ nav_link('events', translations.events.title) }}
@@ -113,8 +113,8 @@
                 {{ nav_link('drink_menu', translations.drink_menu.title) }}
             </ul>
         </div>
-        </div>
     </nav>
+    
 
     <!-- Page Content -->
     <main>
