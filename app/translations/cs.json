@@ -47,13 +47,6 @@
   "events": {
     "title": "Akce",
     "event_list": [ 
-      {
-        "title": "Fetish Noci",
-        "date": "2024 - 2025",
-        "description": "31. prosince: Fetish Novoroční Oslava, 11. ledna: Fetish Noc, 25. ledna: Fetish Noc, 8. února: Fetish Noc.",
-        "img_filename": "garage_program",
-        "aria_label": "Harmonogram Fetish nocí: 31. prosince, 11. ledna, 25. ledna, 8. února."
-      }
       
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",
