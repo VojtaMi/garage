@@ -47,6 +47,21 @@
   "events": {
     "title": "Akce",
     "event_list": [ 
+      {
+        "title": "Prasení party",
+        "date": "14.5. & 17.5.",
+        "description": "Dresscode: Všichni zcela nazí + maska nebo škraboška. Povolené doplňky: masky, harness, čepice, hanky code šátky, ledvinka, taška, batůžek, boty, ponožky.",
+        "img_filename": "praseni",
+        "aria_label": "Pozvánka na Prasení party. 14.5. & 17.5."
+      },
+      {
+        "title": "Hankycode šátky",
+        "date": "",
+        "description": "Sdělte své preference pomocí šátku – více na hankycode.cz",
+        "img_filename": "satky",
+        "aria_label": "www.hankycode.cz – šátky k vyjádření preferencí"
+      }
+      
       
     ],
     "aria_label_card": "Klikněte pro zobrazení informací",

@@ -46,6 +46,21 @@
   "events": {
     "title": "Events",
     "event_list": [
+      {
+        "title": "Prasení Party",
+        "date": "May 14 & May 17",
+        "description": "Dress code: Everyone completely naked + mask or face covering. Allowed accessories: masks, harnesses, caps, hanky code bandanas, fanny pack, bag, backpack, shoes, socks.",
+        "img_filename": "praseni",
+        "aria_label": "Invitation to Prasení Party. May 14 & May 17."
+      },
+      {
+        "title": "Hankycode Bandanas",
+        "date": "",
+        "description": "Show your preferences using a bandana – more at hankycode.cz",
+        "img_filename": "satky",
+        "aria_label": "www.hankycode.cz – bandanas to express preferences"
+      }
+      
     ],
     "aria_label_card": "Click to see details",
     "fb_button_text": [
