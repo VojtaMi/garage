@@ -73,33 +73,22 @@
     ]
   },
   "opening_hours": [
-    {
-      "day": "Monday",
-      "hours": "8:00 PM - 4:00 AM"
-    },
-    {
-      "day": "Tuesday",
-      "hours": "8:00 PM - 4:00 AM"
-    },
+ 
     {
       "day": "Wednesday",
-      "hours": "8:00 PM - 4:00 AM"
+      "hours": "9:00 PM - 5:00 AM"
     },
     {
       "day": "Thursday",
-      "hours": "8:00 PM - 4:00 AM"
+      "hours": "9:00 PM - 5:00 AM"
     },
     {
       "day": "Friday",
-      "hours": "9:00 PM - 7:00 AM"
+      "hours": "8:00 PM - 6:00 AM"
     },
     {
       "day": "Saturday",
-      "hours": "9:00 PM - 7:00 AM"
-    },
-    {
-      "day": "Sunday",
-      "hours": "8:00 PM - 4:00 AM"
+      "hours": "8:00 PM - 6:00 AM"
     }
   ],
   "contacts": {
