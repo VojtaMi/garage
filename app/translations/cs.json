@@ -126,7 +126,7 @@
     },
     "operator": "Provozovatel",
     "manager": "Odpovědný vedoucí",
-    "adress": "Adresa"
+    "address": "Adresa"
   },
   "drink_menu": {
     "title": "Nápojový lístek",
