@@ -115,6 +115,7 @@
       "heading": "Opening Hours"
     },
     "ageRestriction": "Entry 18+",
+    "privateClubInfo": "Private club - The owner reserves the right to enter.",
     "payments": [
       "Cash & Cards"
     ],
@@ -122,7 +123,9 @@
     "additional_info": {
       "heading": "Additional info"
     },
-    "operator": "Operator"
+    "operator": "Operator",
+    "manager": "Responsible Manager",
+    "address": "Adresa"
   },
   "drink_menu": {
     "title": "Drink Menu",

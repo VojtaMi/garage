@@ -116,6 +116,7 @@
       "heading": "Otevírací doba"
     },
     "ageRestriction": "Vstup od 18",
+    "privateClubInfo": "Private club - majitel si vyhrazuje právo vstupu",
     "payments": [
       "Hotově i kartou"
     ],
@@ -123,7 +124,9 @@
     "additional_info": {
       "heading": "Další informace"
     },
-    "operator": "Provozovatel"
+    "operator": "Provozovatel",
+    "manager": "Odpovědný vedoucí",
+    "adress": "Adresa"
   },
   "drink_menu": {
     "title": "Nápojový lístek",
