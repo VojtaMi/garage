@@ -11,12 +11,12 @@
 {% macro event_card(event) %}
 <div class="col-12 col-sm-6 col-xxl-4 mb-3 d-flex justify-content-center">
     <div class="flip-card" tabindex="0" role="button" aria-label="{{ translations.events.aria_label_card }}"
-         aria-live="polite">
+        aria-live="polite">
         <div class="flip-card-inner">
             <!-- Front of the card -->
             <div class="flip-card-front">
                 <img src="{{ url_for('static', filename=('assets/posters/' + event.img_filename + '.avif')) }}"
-                     class="card-picture gallery-picture" alt="{{ event.aria_label }}">
+                    class="card-picture gallery-picture" alt="{{ event.aria_label }}">
                 <i class="bi bi-arrow-left-right d-xl-none" id="swap-card-sign"></i>
             </div>
             <!-- Back of the card -->
@@ -34,12 +34,10 @@
 
 {% macro title_img() %}
 <img src="{{ url_for('static', filename='assets/img/tattoo_wide.avif') }}"
-     class="d-block w-100 poster-img d-none d-sm-block"
-     alt="{{ translations.drink_menu.altText }}">
+    class="d-block w-100 poster-img d-none d-sm-block" alt="{{ translations.drink_menu.altText }}">
 
-<img src="{{ url_for('static', filename='assets/img/tattoo_high.avif') }}"
-     class="d-block w-100 poster-img d-sm-none"
-     alt="{{ translations.drink_menu.altText }}">
+<img src="{{ url_for('static', filename='assets/img/tattoo_high.avif') }}" class="d-block w-100 poster-img d-sm-none"
+    alt="{{ translations.drink_menu.altText }}">
 {% endmacro %}
 
 
@@ -48,7 +46,9 @@
     <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
     <div class="row d-flex justify-content-center">
         {% for event in translations.events.event_list %}
-        {{ event_card(event) }}
+            {% if isValid(event) %}
+                {{ event_card(event) }}
+            {% endif %}
         {% endfor %}
     </div>
 </div>
@@ -65,8 +65,7 @@
     <div class="row justify-content-center mt-5">
         <div class="col-12 col-md-6 text-center">
             <a href="https://www.facebook.com/garageprague" class="btn btn-primary-yellow px-3 py-3"
-               aria-label="facebook"
-               target="_blank">
+                aria-label="facebook" target="_blank">
                 <i class="bi bi-facebook"></i>
                 {{ fb_button_text[0] }}
                 <br>
