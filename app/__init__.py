@@ -16,10 +16,12 @@ def create_app(config_name=None):
     # Configure routes
     configure_routes(app)
     
-    def is_valid_event(event):
+    
+    def filter_valid_events(events):
         today = date.today().isoformat()
-        return not event.get("expire") or event["expire"] > today
+        return [event for event in events if not event.get("expire") or event["expire"] > today]
 
-    app.jinja_env.globals['isValid'] = is_valid_event
-
+    # Register it in Jinja2
+    app.jinja_env.globals['validEvents'] = filter_valid_events
+    
     return app

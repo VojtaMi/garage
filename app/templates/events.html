@@ -40,15 +40,13 @@
     alt="{{ translations.drink_menu.altText }}">
 {% endmacro %}
 
-
-{% if translations.events.event_list %}
+{% set valid_events = validEvents(translations.events.event_list) %}
+{% if valid_events %}
 <div class="container">
     <h1 class="heading mt-0 text-center">{{ translations.events.title }}</h1>
     <div class="row d-flex justify-content-center">
-        {% for event in translations.events.event_list %}
-            {% if isValid(event) %}
-                {{ event_card(event) }}
-            {% endif %}
+        {% for event in valid_events %}
+            {{ event_card(event) }}
         {% endfor %}
     </div>
 </div>
