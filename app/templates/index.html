@@ -61,13 +61,13 @@
     <a href="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}" data-lightbox="gallery">
         <img src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
              class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
-             alt="alt_text">
+             alt="{{ alt_text }}">
     </a>
 </div>
 <div class="d-xl-none">
     <img src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
          class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
-         alt="alt_text">
+         alt="{{ alt_text }}">
 </div>
 
 {% endmacro %}
