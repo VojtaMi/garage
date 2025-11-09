@@ -54,6 +54,7 @@ def configure_routes(app):
     def robots_txt():
         lines = [
             "User-agent: *",  # Applies to all user agents
+            "Disallow:",
             "Sitemap: https://club-garage-prag.cz/static/sitemap.xml"  # Link to your sitemap
         ]
         return Response("\n".join(lines), mimetype="text/plain")

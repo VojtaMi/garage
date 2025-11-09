@@ -25,6 +25,39 @@ footer{
     margin-top: 5rem;
 }
 
+.age-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    display: none;
+    background-color: rgba(8, 8, 8, 0.95);
+    color: #fff;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.age-banner.show {
+    display: block;
+}
+
+.age-banner__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (max-width: 576px) {
+    .age-banner__content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 @media (max-width: 991px) {
     #header_logo{
         width: 2rem;

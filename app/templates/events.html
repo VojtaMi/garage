@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+
+{% block meta_description %}
+<meta name="description" lang="{{ lang }}" content="{{ translations.events.meta_description }}">
+{% endblock %}
+
+{% block page_title %}{{ translations.events.title }} | Club Garage{% endblock %}
 {% block extra_scripts %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/events_styles.css') }}" rel="stylesheet">

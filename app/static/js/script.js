@@ -34,32 +34,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("ageVerificationBanner");
+    if (!banner) return;
+
     const ageConfirmed = localStorage.getItem("ageConfirmed");
     if (ageConfirmed) return;
 
-    function showAgeModal() {
-        const ageModal = new bootstrap.Modal(document.getElementById("ageVerificationModal"), {
-            backdrop: 'static',
-            keyboard: false
-        });
-        ageModal.show();
-        document.removeEventListener("click", showAgeModal);
-        document.removeEventListener("scroll", showAgeModal);
-    }
+    banner.classList.add("show");
 
-    // Confirm age and store in localStorage
-    document.getElementById("confirm-age").addEventListener("click", function () {
+    const confirmButton = document.getElementById("confirm-age");
+    const exitButton = document.getElementById("exit-site");
+
+    confirmButton?.addEventListener("click", function () {
         localStorage.setItem("ageConfirmed", true);
-        const ageModal = bootstrap.Modal.getInstance(document.getElementById('ageVerificationModal'));
-        ageModal.hide();
+        banner.classList.remove("show");
     });
 
-    // Redirect to an external site if the user declines
-    document.getElementById("exit-site").addEventListener("click", function () {
+    exitButton?.addEventListener("click", function () {
         window.location.href = "https://www.google.com";
     });
-
-    // Require user interaction first
-    document.addEventListener("click", showAgeModal);
-    document.addEventListener("scroll", showAgeModal);
 });
