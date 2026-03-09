@@ -73,8 +73,13 @@
     {% set poster = translations.home.poster %}
     <h1 class="visually-hidden">{{ poster.title }}</h1> <!-- Hidden h1 for SEO and accessibility -->
     <picture>
-        <!-- Mobile portrait mode: Load poster_mobile.avif for screens 576px or less -->
-        <source srcset="{{ url_for('static', filename='assets/img/poster_mobile.avif') }}" media="(max-width: 576px)">
+        <!-- Mobile portrait mode: serve responsive mobile variants -->
+        <source
+            media="(max-width: 576px)"
+            type="image/avif"
+            sizes="100vw"
+            srcset="{{ url_for('static', filename='assets/img/poster_mobile_480.avif') }} 480w,
+                    {{ url_for('static', filename='assets/img/poster_mobile.avif') }} 775w">
 
         <!-- Default image for larger screens -->
         <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="poster-img"
