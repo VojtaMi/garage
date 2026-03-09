@@ -170,4 +170,42 @@ h1{
     color: var(--light-gray);
 }
 
+/* age verification dialog */
+#ageVerificationModal {
+    padding: 0;
+    border: 0;
+    border-radius: 0.5rem;
+    max-width: min(92vw, 520px);
+    width: 100%;
+    background: transparent;
+    color: inherit;
+}
+
+#ageVerificationModal::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.age-dialog-content {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.5rem;
+    background-color: #212529;
+}
+
+.age-dialog-header,
+.age-dialog-body,
+.age-dialog-footer {
+    padding: 1rem;
+}
+
+.age-dialog-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.age-dialog-footer {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 /*shared styles end*/

@@ -34,30 +34,93 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const ageConfirmed = localStorage.getItem("ageConfirmed");
-    if (ageConfirmed) return;
+    const AGE_GATE_STORAGE_KEY = "ageGateConsent";
+    const AGE_GATE_VERSION = "v1";
+    const AGE_GATE_TTL_DAYS = 60;
 
-    function showAgeModal() {
-        const ageModal = new bootstrap.Modal(document.getElementById("ageVerificationModal"), {
-            backdrop: 'static',
-            keyboard: false
-        });
-        ageModal.show();
-        document.removeEventListener("click", showAgeModal);
-        document.removeEventListener("scroll", showAgeModal);
+    function isConsentValid() {
+        const raw = localStorage.getItem(AGE_GATE_STORAGE_KEY);
+        if (!raw) return false;
+
+        try {
+            const consent = JSON.parse(raw);
+            if (!consent || consent.version !== AGE_GATE_VERSION) return false;
+            if (typeof consent.expiresAt !== "number") return false;
+            return consent.expiresAt > Date.now();
+        } catch (error) {
+            return false;
+        }
     }
 
+    function persistConsent() {
+        const expiresAt = Date.now() + AGE_GATE_TTL_DAYS * 24 * 60 * 60 * 1000;
+        const payload = { version: AGE_GATE_VERSION, expiresAt: expiresAt };
+        localStorage.setItem(AGE_GATE_STORAGE_KEY, JSON.stringify(payload));
+    }
+
+    // Backward compatibility with old boolean storage key.
+    if (localStorage.getItem("ageConfirmed")) {
+        persistConsent();
+        localStorage.removeItem("ageConfirmed");
+    }
+
+    if (isConsentValid()) return;
+
+    const ageModal = document.getElementById("ageVerificationModal");
+    const confirmButton = document.getElementById("confirm-age");
+    const exitButton = document.getElementById("exit-site");
+
+    if (!ageModal || !confirmButton || !exitButton) return;
+
+    const supportsDialog = typeof ageModal.showModal === "function";
+    const fallbackPrompt = ageModal.dataset.confirmText || "18+ ?";
+
     // Confirm age and store in localStorage
-    document.getElementById("confirm-age").addEventListener("click", function () {
-        localStorage.setItem("ageConfirmed", true);
-        const ageModal = bootstrap.Modal.getInstance(document.getElementById('ageVerificationModal'));
-        ageModal.hide();
+    confirmButton.addEventListener("click", function () {
+        persistConsent();
+        if (supportsDialog && ageModal.open) {
+            ageModal.close("approved");
+        }
     });
 
     // Redirect to an external site if the user declines
-    document.getElementById("exit-site").addEventListener("click", function () {
+    exitButton.addEventListener("click", function () {
         window.location.href = "https://www.google.com";
     });
+
+    if (!supportsDialog) {
+        const accepted = window.confirm(fallbackPrompt);
+        if (accepted) {
+            persistConsent();
+        } else {
+            window.location.href = "https://www.google.com";
+        }
+        return;
+    }
+
+    // Keep dialog modal; require explicit user choice.
+    ageModal.addEventListener("cancel", function (event) {
+        event.preventDefault();
+    });
+    ageModal.addEventListener("click", function (event) {
+        const dialogRect = ageModal.getBoundingClientRect();
+        const clickedInsideDialog =
+            event.clientX >= dialogRect.left &&
+            event.clientX <= dialogRect.right &&
+            event.clientY >= dialogRect.top &&
+            event.clientY <= dialogRect.bottom;
+        if (!clickedInsideDialog) {
+            event.preventDefault();
+        }
+    });
+
+    function showAgeModal() {
+        if (!ageModal.open) {
+            ageModal.showModal();
+        }
+        document.removeEventListener("click", showAgeModal);
+        document.removeEventListener("scroll", showAgeModal);
+    }
 
     // Require user interaction first
     document.addEventListener("click", showAgeModal);

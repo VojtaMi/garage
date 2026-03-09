@@ -44,6 +44,29 @@
     ],
     "meta_description": "Club Garage Praha – nejlepší gay fetish a cruising bar v centru Prahy. Užijte si vzrušující fetish nights, skvělé drinky a diskrétní zábavu pro muže 18+. Navštivte nás a zažijte nezapomenutelnou atmosféru!"
   },
+  "seo": {
+    "site_name": "Club Garage Praha",
+    "default_title": "Club Garage Praha | Fetish a cruising bar v centru",
+    "default_description": "Club Garage Praha je diskrétní gay fetish a cruising bar pro muže 18+ v centru Prahy. Otevírací doba, akce, kontakty a nápojový lístek na jednom místě.",
+    "pages": {
+      "home": {
+        "title": "Club Garage Praha | Fetish a cruising bar v centru",
+        "description": "Club Garage Praha - gay fetish a cruising bar pro muže 18+ v centru Prahy. Diskrétní prostředí, tematické akce, kvalitní drinky a pravidelný program."
+      },
+      "contacts": {
+        "title": "Kontakt a otevírací doba | Club Garage Praha",
+        "description": "Kontakty na Club Garage Praha: adresa Balbínova 224/3, Praha 2, otevírací doba středa až sobota, spojení MHD a další praktické informace pro návštěvu."
+      },
+      "events": {
+        "title": "Akce a tematické večery | Club Garage Praha",
+        "description": "Přehled akcí a tematických večerů v Club Garage Praha. Sledujte aktuální program, party informace a novinky z klubu."
+      },
+      "drink_menu": {
+        "title": "Nápojový lístek | Club Garage Praha",
+        "description": "Nápojový lístek Club Garage Praha včetně výběru alkoholu, piva, vína i nealko nápojů. Aktuální nabídka a základní informace k cenám."
+      }
+    }
+  },
   "events": {
     "title": "Akce",
     "event_list": [ 
@@ -624,6 +647,7 @@
     "title": "Podnik pro dospělé",
     "disclaimer": "Club Garage je dostupný pouze pro muže nad 18 let. Potvrďte prosím svou způsobilost pro vstup.",
     "approve": "Je mi 18+",
-    "decline": "Odejít"
+    "decline": "Odejít",
+    "fallback_prompt": "Je vám 18 nebo více?"
   }
 }

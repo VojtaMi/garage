@@ -43,6 +43,29 @@
     ],
     "meta_description": "Club Garage Prague - the top gay fetish and cruising bar in Central Prague. Enjoy thrilling fetish nights, great drinks, and discreet fun for men 18+. Visit us for an unforgettable experience!"
   },
+  "seo": {
+    "site_name": "Club Garage Prague",
+    "default_title": "Club Garage Prague | Fetish & Cruising Bar",
+    "default_description": "Club Garage Prague is a discreet gay fetish and cruising bar for men 18+ in central Prague. Find opening hours, events, contacts and drink menu in one place.",
+    "pages": {
+      "home": {
+        "title": "Club Garage Prague | Fetish & Cruising Bar",
+        "description": "Club Garage Prague is a gay fetish and cruising bar for men 18+ in central Prague. Discreet environment, themed events, quality drinks and a regular club program."
+      },
+      "contacts": {
+        "title": "Contact & Opening Hours | Club Garage Prague",
+        "description": "Contact Club Garage Prague: Balbinova 224/3, Prague 2, opening hours from Wednesday to Saturday, public transport directions and practical visitor information."
+      },
+      "events": {
+        "title": "Events & Theme Nights | Club Garage Prague",
+        "description": "Browse events and themed nights at Club Garage Prague. Stay up to date with the current program, party details and club news."
+      },
+      "drink_menu": {
+        "title": "Drink Menu | Club Garage Prague",
+        "description": "Drink menu of Club Garage Prague including spirits, beer, wine and non-alcoholic options. Current offer and basic pricing information."
+      }
+    }
+  },
   "events": {
     "title": "Events",
     "event_list": [
@@ -623,6 +646,7 @@
     "title": "Adult business",
     "disclaimer": "Club Garage is only available to adult men. Please confirm your eligibility to enter.",
     "approve": "I am 18 or older",
-    "decline": "Leave"
+    "decline": "Leave",
+    "fallback_prompt": "Are you 18 or older?"
   }
 }

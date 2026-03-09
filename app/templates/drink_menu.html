@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block meta_title %}{{ translations.seo.pages.drink_menu.title }}{% endblock %}
+
+{% block meta_description %}{{ translations.seo.pages.drink_menu.description }}{% endblock %}
+
 {% block extra_styles %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/drink_menu_styles.css') }}" rel="stylesheet">

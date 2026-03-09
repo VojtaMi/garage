@@ -1,7 +1,15 @@
 {% extends "base.html" %}
-{% block extra_scripts %}
+
+{% block meta_title %}{{ translations.seo.pages.events.title }}{% endblock %}
+
+{% block meta_description %}{{ translations.seo.pages.events.description }}{% endblock %}
+
+{% block extra_styles %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/events_styles.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block extra_scripts %}
 <!-- Custom JS -->
 <script src="{{ url_for('static', filename='js/script_events.js') }}"></script>
 {% endblock %}
