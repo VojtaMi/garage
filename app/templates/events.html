@@ -24,7 +24,8 @@
             <!-- Front of the card -->
             <div class="flip-card-front">
                 <img src="{{ url_for('static', filename=('assets/posters/' + event.img_filename + '.avif')) }}"
-                    class="card-picture gallery-picture" alt="{{ event.aria_label }}">
+                    class="card-picture gallery-picture" alt="{{ event.aria_label }}"
+                    loading="lazy" decoding="async">
                 <i class="bi bi-arrow-left-right d-xl-none" id="swap-card-sign"></i>
             </div>
             <!-- Back of the card -->
@@ -42,10 +43,12 @@
 
 {% macro title_img() %}
 <img src="{{ url_for('static', filename='assets/img/tattoo_wide.avif') }}"
-    class="d-block w-100 poster-img d-none d-sm-block" alt="{{ translations.drink_menu.altText }}">
+    class="d-block w-100 poster-img d-none d-sm-block" alt="{{ translations.drink_menu.altText }}"
+    width="2993" height="1024" loading="eager" fetchpriority="high" decoding="async">
 
 <img src="{{ url_for('static', filename='assets/img/tattoo_high.avif') }}" class="d-block w-100 poster-img d-sm-none"
-    alt="{{ translations.drink_menu.altText }}">
+    alt="{{ translations.drink_menu.altText }}" width="1000" height="500"
+    loading="eager" fetchpriority="high" decoding="async">
 {% endmacro %}
 
 {% set valid_events = validEvents(translations.events.event_list) %}

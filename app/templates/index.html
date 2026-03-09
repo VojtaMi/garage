@@ -8,15 +8,8 @@
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/index_styles.css') }}" rel="stylesheet">
 
-<!-- jQuery (needed for Lightbox2) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-
 <!-- Lightbox2 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
-
-<!-- Lightbox2 JS -->
-<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
-
 {% endblock %}
 
 {% block content %}
@@ -29,6 +22,8 @@
     <!-- Default image for larger screens -->
     <img class="title-logo-png"
      src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}"
+     width="4645" height="694"
+     loading="eager" decoding="async"
      alt="Club Garage">
 </picture>
 {% endmacro %}
@@ -36,7 +31,7 @@
 {% macro featurette_img(featurette) %}
 <div class="col-12 col-md-7">
     <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
-         class="img-fluid mx-auto">
+         class="img-fluid mx-auto" loading="lazy" decoding="async">
 </div>
 {% endmacro %}
 
@@ -59,14 +54,16 @@
 <!-- Element 1: Visible only on screens smaller than xl (less than 1200px) -->
 <div class="d-none d-xl-block">
     <a href="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}" data-lightbox="gallery">
-        <img src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
+        <img src="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '.avif') }}"
              class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
+             loading="lazy" decoding="async"
              alt="{{ alt_text }}">
     </a>
 </div>
 <div class="d-xl-none">
-    <img src="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}"
+    <img src="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '.avif') }}"
          class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
+         loading="lazy" decoding="async"
          alt="{{ alt_text }}">
 </div>
 
@@ -82,6 +79,8 @@
 
         <!-- Default image for larger screens -->
         <img src="{{ url_for('static', filename='assets/img/poster.avif') }}" class="poster-img"
+             width="1920" height="1281"
+             loading="eager" fetchpriority="high" decoding="async"
              alt="{{ poster.altText }}">
     </picture>
 
@@ -215,6 +214,7 @@
                 <div class="circle-frame img-hover">
                     <img src="{{ url_for('static', filename='assets/logos/termix_logo.png') }}"
                          alt="Termix logo"
+                         loading="lazy" decoding="async"
                          id="termix-logo"
                     >
                 </div>
@@ -227,5 +227,7 @@
 {% endblock %}
 
 {% block extra_scripts %}
-<script src="{{ url_for('static', filename='js/script_home.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js" defer></script>
+<script src="{{ url_for('static', filename='js/script_home.js') }}" defer></script>
 {% endblock %}
