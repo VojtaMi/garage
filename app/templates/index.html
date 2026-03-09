@@ -16,12 +16,19 @@
 
 {% macro header_logo() %}
 <picture>
-    <!-- Mobile portrait mode: Load poster_mobile.avif for screens 576px or less -->
-    <source srcset="{{ url_for('static', filename='assets/logos/garage_poster_logo_2.png') }}" media="(max-width: 576px)">
+    <!-- Mobile portrait mode: serve lighter responsive logo variants -->
+    <source
+        media="(max-width: 576px)"
+        sizes="90vw"
+        srcset="{{ url_for('static', filename='assets/logos/garage_poster_logo_2_360.png') }} 360w,
+                {{ url_for('static', filename='assets/logos/garage_poster_logo_2_720.png') }} 720w">
 
     <!-- Default image for larger screens -->
     <img class="title-logo-png"
-     src="{{ url_for('static', filename='assets/logos/garage_poster_logo.png') }}"
+     src="{{ url_for('static', filename='assets/logos/garage_poster_logo_900.png') }}"
+     srcset="{{ url_for('static', filename='assets/logos/garage_poster_logo_900.png') }} 900w,
+             {{ url_for('static', filename='assets/logos/garage_poster_logo_1400.png') }} 1400w"
+     sizes="(max-width: 768px) 90vw, (max-width: 992px) 80vw, 70vw"
      loading="eager" decoding="async"
      alt="Club Garage">
 </picture>
@@ -29,7 +36,12 @@
 
 {% macro featurette_img(featurette) %}
 <div class="col-12 col-md-7">
-    <img src="{{ url_for('static', filename=featurette.image.src) }}" alt="{{ featurette.image.altText }}"
+    <img src="{{ url_for('static', filename=featurette.image.src | replace('.avif', '_400.avif')) }}"
+         srcset="{{ url_for('static', filename=featurette.image.src | replace('.avif', '_400.avif')) }} 400w,
+                 {{ url_for('static', filename=featurette.image.src | replace('.avif', '_800.avif')) }} 800w,
+                 {{ url_for('static', filename=featurette.image.src) }} 1200w"
+         sizes="(max-width: 767px) 100vw, (max-width: 1200px) 58vw, 700px"
+         alt="{{ featurette.image.altText }}"
          class="img-fluid mx-auto" loading="lazy" decoding="async">
 </div>
 {% endmacro %}
@@ -53,14 +65,20 @@
 <!-- Element 1: Visible only on screens smaller than xl (less than 1200px) -->
 <div class="d-none d-xl-block">
     <a href="{{ url_for('static', filename='assets/gallery/' + base_filename + '.avif') }}" data-lightbox="gallery">
-        <img src="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '.avif') }}"
+        <img src="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '_480.avif') }}"
+             srcset="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '_480.avif') }} 480w,
+                     {{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '.avif') }} 720w"
+             sizes="(max-width: 576px) 92vw, (max-width: 1200px) 88vw, 388px"
              class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
              loading="lazy" decoding="async"
              alt="{{ alt_text }}">
     </a>
 </div>
 <div class="d-xl-none">
-    <img src="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '.avif') }}"
+    <img src="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '_480.avif') }}"
+         srcset="{{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '_480.avif') }} 480w,
+                 {{ url_for('static', filename='assets/gallery/thumbs/' + base_filename + '.avif') }} 720w"
+         sizes="(max-width: 576px) 92vw, (max-width: 1200px) 88vw, 388px"
          class="w-100 shadow-1-strong rounded mb-4 gallery-picture"
          loading="lazy" decoding="async"
          alt="{{ alt_text }}">
@@ -79,6 +97,7 @@
             type="image/avif"
             sizes="100vw"
             srcset="{{ url_for('static', filename='assets/img/poster_mobile_480.avif') }} 480w,
+                    {{ url_for('static', filename='assets/img/poster_mobile_640.avif') }} 640w,
                     {{ url_for('static', filename='assets/img/poster_mobile.avif') }} 775w">
 
         <!-- Default image for larger screens -->
@@ -217,6 +236,9 @@
                aria-label="TerMix website">
                 <div class="circle-frame img-hover">
                     <img src="{{ url_for('static', filename='assets/logos/termix_logo.png') }}"
+                         srcset="{{ url_for('static', filename='assets/logos/termix_logo_160.png') }} 160w,
+                                 {{ url_for('static', filename='assets/logos/termix_logo.png') }} 700w"
+                         sizes="160px"
                          alt="Termix logo"
                          loading="lazy" decoding="async"
                          id="termix-logo"

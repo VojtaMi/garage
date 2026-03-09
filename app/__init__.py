@@ -1,11 +1,12 @@
 from flask import Flask
 from app.translations import load_all_translations
 from app.routes import configure_routes
-from datetime import date
+from datetime import date, timedelta
 
 
 def create_app(config_name=None):
     app = Flask(__name__)
+    app.config["SEND_FILE_MAX_AGE_DEFAULT"] = timedelta(days=7)
 
     # Load translations
     translations = load_all_translations()

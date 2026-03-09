@@ -99,7 +99,11 @@
 
     {% macro logo_link() %}
     <a href="{{ url_for('home', lang=lang) }}" aria-label="{{ translations.home.title }}">
-        <img src="{{ url_for('static', filename='assets/logos/garage_light_gray.png') }}"
+        <img src="{{ url_for('static', filename='assets/logos/garage_light_gray_256.png') }}"
+            srcset="{{ url_for('static', filename='assets/logos/garage_light_gray_128.png') }} 128w,
+                    {{ url_for('static', filename='assets/logos/garage_light_gray_256.png') }} 256w,
+                    {{ url_for('static', filename='assets/logos/garage_light_gray_512.png') }} 512w"
+            sizes="128px"
             class="link-logo home-scroll-up" alt="Garage Logo" decoding="async">
     </a>
 {% endmacro %}
