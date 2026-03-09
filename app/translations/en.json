@@ -45,7 +45,6 @@
   },
   "events": {
     "title": "Events",
-    "meta_description": "Discover upcoming fetish parties, cruising nights, and special events at Club Garage Prague. See what's on this week and plan your visit.",
     "event_list": [
       {
         "title": "Prasení Party",
@@ -96,7 +95,6 @@
   ],
   "contacts": {
     "title": "Contacts",
-    "meta_description": "Find directions, opening hours, and contact info for Club Garage Prague. Get in touch, plan your trip, or ask about private events.",
     "connections": "Connection",
     "location": {
       "address": "Balbínova 224/3, Prague 2",
@@ -134,7 +132,6 @@
   "drink_menu": {
     "title": "Drink Menu",
     "altText": "Visitors of the Garage club are drinking a shot",
-    "meta_description": "Browse the full Club Garage Prague drink menu, from cocktails and shots to beer and bubbles. Download the PDF and check current prices.",
     "download": "Download",
     "disclaimers": [
       "List of allergens with the bar staff.",

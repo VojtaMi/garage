@@ -46,7 +46,6 @@
   },
   "events": {
     "title": "Akce",
-    "meta_description": "Zjistěte, jaké fetish párty, cruising nights a speciální akce se chystají v Clubu Garage Praha. Podívejte se, co se děje tento týden.",
     "event_list": [ 
       {
         "title": "Prasení party",
@@ -97,7 +96,6 @@
   ],
   "contacts": {
     "title": "Kontakty",
-    "meta_description": "Najděte trasu, otevírací dobu a kontakty na Club Garage Praha. Spojte se s námi, naplánujte návštěvu nebo se zeptejte na soukromé akce.",
     "connections": "Spojení",
     "location": {
       "address": "Balbínova 224/3, Praha 2",
@@ -135,7 +133,6 @@
   "drink_menu": {
     "title": "Nápojový lístek",
     "altText": "Návštevníci klubu Garage pijí panáka",
-    "meta_description": "Projděte si kompletní nápojový lístek Clubu Garage Praha – koktejly, panáky, pivo i bubliny. Stáhněte si PDF a zkontrolujte aktuální ceny.",
     "download": "Stáhnout",
     "disclaimers": [
       "Seznam alergenů u obsluhy na baru.",

@@ -1,11 +1,5 @@
 {% extends "base.html" %}
 
-{% block meta_description %}
-<meta name="description" lang="{{ lang }}" content="{{ translations.drink_menu.meta_description }}">
-{% endblock %}
-
-{% block page_title %}{{ translations.drink_menu.title }} | Club Garage{% endblock %}
-
 {% block extra_styles %}
 <!-- Custom CSS -->
 <link href="{{ url_for('static', filename='css/drink_menu_styles.css') }}" rel="stylesheet">
