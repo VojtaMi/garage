@@ -43,12 +43,10 @@
 
 {% macro title_img() %}
 <img src="{{ url_for('static', filename='assets/img/tattoo_wide.avif') }}"
-    class="d-block w-100 poster-img d-none d-sm-block" alt="{{ translations.drink_menu.altText }}"
-    width="2993" height="1024" loading="eager" fetchpriority="high" decoding="async">
+    class="d-block w-100 poster-img d-none d-sm-block" alt="{{ translations.drink_menu.altText }}">
 
 <img src="{{ url_for('static', filename='assets/img/tattoo_high.avif') }}" class="d-block w-100 poster-img d-sm-none"
-    alt="{{ translations.drink_menu.altText }}" width="1000" height="500"
-    loading="eager" fetchpriority="high" decoding="async">
+    alt="{{ translations.drink_menu.altText }}">
 {% endmacro %}
 
 {% set valid_events = validEvents(translations.events.event_list) %}
