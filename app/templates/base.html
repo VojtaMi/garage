@@ -46,6 +46,7 @@
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 
     <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='assets/logos/mask.svg') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/logos/favicon-32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/logos/favicon-16.png') }}">
     <link rel="icon" href="{{ url_for('static', filename='assets/logos/favicon.ico') }}" sizes="any">
@@ -170,7 +171,7 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
             <p class="col-md-4 mb-0 text-body-secondary">© 2002–{{ current_year }} HAPES s.r.o.</p>
-            {{ logo_link() }}
+            
             <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item footer-logo">
                     {{ house_link() }}
