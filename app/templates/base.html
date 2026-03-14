@@ -46,11 +46,11 @@
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='assets/logos/mask.svg') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ url_for('favicon_png', _external=True) }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/logos/favicon-32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/logos/favicon-16.png') }}">
-    <link rel="icon" href="{{ url_for('static', filename='assets/logos/favicon.ico') }}" sizes="any">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/logos/apple-touch-icon.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('favicon_ico', _external=True) }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('apple_touch_icon', _external=True) }}">
 
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

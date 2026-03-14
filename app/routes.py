@@ -1,7 +1,7 @@
 from datetime import date
 from xml.sax.saxutils import escape
 
-from flask import Response, abort, redirect, render_template, request, url_for
+from flask import Response, abort, redirect, render_template, request, send_from_directory, url_for
 
 
 SUPPORTED_LANGS = ("cs", "en")
@@ -63,6 +63,30 @@ def configure_routes(app):
         response = redirect(url_for("home", lang=target_lang), code=302)
         response.headers["Vary"] = "Accept-Language"
         return response
+
+    @app.route('/favicon.ico')
+    def favicon_ico():
+        return send_from_directory(
+            app.static_folder,
+            'assets/logos/favicon.ico',
+            mimetype='image/vnd.microsoft.icon'
+        )
+
+    @app.route('/favicon.png')
+    def favicon_png():
+        return send_from_directory(
+            app.static_folder,
+            'assets/logos/favicon-512.png',
+            mimetype='image/png'
+        )
+
+    @app.route('/apple-touch-icon.png')
+    def apple_touch_icon():
+        return send_from_directory(
+            app.static_folder,
+            'assets/logos/apple-touch-icon.png',
+            mimetype='image/png'
+        )
 
     @app.route('/<lang>/')
     def home(lang):
